@@ -1,0 +1,32 @@
+<div class="container pad-top">
+  <table class="table usertable">
+      <tr>
+          <td><h3>Details for {{userdata.name}}</h3></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Email</td>
+          <td>{{userdata.email}}</td>
+      </tr>
+      <tr>
+          <td>First Name</td>
+          <td>{{userdata.fname}}</td>
+      </tr>
+      <tr>
+          <td>Last Name</td>
+          <td>{{userdata.lname}}</td>
+      </tr>
+      <tr>
+          <td>City</td>
+          <td>{{userdata.city}}</td>
+      </tr>
+      <tr>
+          <td>Geo Location</td>
+          <td>{{userdata.state}},{{userdata.cntry}}</td>
+      </tr>
+    
+  </table>
+  <div>
+      <a class="btn btn-primary" ui-sref="editUser({id:userdata.iduser})">Edit</a>
+  </div>
+</div>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tcs.Repo.mapper.QueryMapper">
+    
+	<select id="getuserprof" resultType="com.tcs.Repo.model.UserVO">
+		select iduser as
+		iduser,email as email,fname as fname,lname as lname,state
+		as state,city
+		as city,cntry as cntry from userprof
+	
+	</select>
+	
+	<select id="getuserprofile" resultType="com.tcs.Repo.model.UserVO">
+		select iduser as
+		iduser,email as email,fname as fname,lname as lname,state
+		as state,city
+		as city,cntry as cntry from userprof where iduser= #{id}
+
+	</select>
+	
+		<select id="getmasterdata" resultType="com.tcs.Repo.model.MasterVO">
+		select * from  master_data
+
+	</select>
+	
+	<update id="updatemasterdata">
+		
+		update master_data set 
+		tower=#{tower},
+		project=#{project},
+		won_number=#{won_number},
+		won_type=#{won_type},
+		offsite_location=#{offsite_location},
+		service_line=#{service_line},
+		sub_sp=#{sub_sp},
+		project_type=#{project_type},
+		rate=#{rate},
+		probability=#{probability},
+		brm_name='Vivek',
+		updt_ts=now(),
+		updt_id='Shyam'
+		 where rec_key=#{rec_key}
+	</update>
+	
+		<insert id="createuser">
+		insert into userprof(email,fname,lname,state,city,cntry) 
+		values(#{email},#{fname},#{lname},#{state},#{city},#{cntry}) 
+
+	</insert>
+	
+	<insert id="createprojdata" parameterType="com.tcs.Repo.model.MasterVO">
+	Insert into master_data
+	(
+	rec_key	,
+	tower,	
+	project	,
+	won_number	,
+	won_type	,
+	offsite_location,	
+	service_line	,
+	sub_sp	,
+	project_type,	
+	rate	,
+	probability,	
+	brm_name	,
+	updt_ts	,
+	updt_id
+	)
+	values(
+	(select max(rec_key)+1 from master_data),
+	#{tower},
+	#{project},
+	#{won_number},
+	#{won_type},
+	#{offsite_location},
+	#{service_line},
+	#{sub_sp},
+	#{project_type},
+	#{rate},
+	#{probability},
+	'Vivek',
+	now(),
+	'Shyam'
+	)
+	</insert>
+	
+	<select id="getProjectionData" resultType="com.tcs.Repo.model.ProjectionVO">
+		select * from projections
+
+	</select>
+	
+	<insert id="createProjectonData" parameterType="com.tcs.Repo.model.ProjectionVO">
+	Insert into projections
+	(
+	rec_key,	
+	tower,	
+	project	,
+	won_number,	
+	won_type	,
+	month	,
+	year	,
+	resource_count,	
+	revenue	,
+	updt_ts	,
+	updt_user
+	)
+	values(
+	#{rec_key},
+	#{tower},
+	#{project},
+	#{won_number},
+	#{won_type},
+	#{month},
+	#{Year},
+	#{resource_count},
+	#{revenue},
+	now(),	
+    'Shyam'
+	) ON CONFLICT ON CONSTRAINT projections_pkey
+	DO UPDATE SET resource_count = #{resource_count}, revenue = #{revenue}
+	</insert>
+	
+		
+</mapper>
