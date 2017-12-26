@@ -2,6 +2,7 @@ package com.tcs.Repo.service;
 
 import java.util.List;
 
+import com.tcs.Repo.model.ImportVO;
 import com.tcs.Repo.model.MasterVO;
 import com.tcs.Repo.model.ProjectionVO;
 import com.tcs.Repo.model.UserVO;
@@ -29,6 +30,8 @@ public interface UserService {
 	ProjectionVO updateProjection(ProjectionVO projectionVO);
 	
 	ProjectionVO createProjecton(ProjectionVO projectionVO);
+
+	void insertImportdata(List<ImportVO> importlist);
 	
 	
 

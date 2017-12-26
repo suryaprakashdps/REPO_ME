@@ -1,6 +1,6 @@
 (function() {
 	var app = angular.module('app', ['ui.router', 'navController', 'ngAnimate', 'ui.bootstrap', 'ngResource', 'app.controllers', 'app.services','ui.grid.pagination',
-		 'ui.grid','ui.grid.exporter', 'ui.grid.selection'])
+		 'ui.grid','ui.grid.exporter', 'ui.grid.importer','ui.grid.selection'])
 
 	// define for requirejs loaded modules
 	define('app', [], function() { return app; });
@@ -75,6 +75,11 @@
 	       url:'/projection/edit',
 	       templateUrl: viewsPrefix + 'editProjection.html',
 	       controller:'EditProjectionController'
+	    })
+	         .state('importproj',{
+	        url:'/projects/import',
+	        templateUrl: viewsPrefix + 'importproj.html',
+	        controller:'ProjImportController'
 	    })
 	    
 	    .state('addprojection',{

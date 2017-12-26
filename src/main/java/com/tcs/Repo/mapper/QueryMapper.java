@@ -3,7 +3,9 @@ package com.tcs.Repo.mapper;
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
+import com.tcs.Repo.model.ImportVO;
 import com.tcs.Repo.model.MasterVO;
 import com.tcs.Repo.model.ProjectionVO;
 import com.tcs.Repo.model.UserVO;
@@ -16,6 +18,8 @@ public interface QueryMapper {
 	public UserVO getuserprofile(int id);
 
 	public void createuser(UserVO uservo);
+	
+	public void insertImport(@Param("importlist") List<ImportVO> importlist);
 
 	public List<MasterVO> getmasterdata();
 

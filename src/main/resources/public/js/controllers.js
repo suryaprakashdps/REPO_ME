@@ -51,9 +51,9 @@ angular
 								{
 									name : 'actions',
 									displayName : 'Actions',
-									cellTemplate : '<button id="editBtn" type="button" class="btn btn-primary" ng-click="grid.appScope.masteredit(row.entity)">EDIT</button>'
+									cellTemplate : '<button id="editBtn" type="button" class="glyphicon glyphicon-pencil" ng-click="grid.appScope.masteredit(row.entity)"></button>'
 
-							} 
+								} 
 								]
 					};
 // var obj={};
@@ -112,6 +112,37 @@ angular
 						});
 					};
 				})
+				
+					.controller('ProjImportController',
+				function($scope,$http, $state, $stateParams, importService,$interval) {
+						$scope.data = [];
+						  $scope.gridOptions = {
+						    enableGridMenu: true,
+						    data: 'data',
+						    importerDataAddCallback: function ( grid, newObjects ) {
+						    	
+						      $scope.data = $scope.data.concat( newObjects );
+						      
+						      importService.importservice($scope.data)
+						      
+						      .then(function successCallback(response) {
+						    	  $scope.success_message="That's Quick !! Successfully Imported Data";
+						    	  $scope.showSuccessAlert = true;
+						    	  
+						      });
+						      
+						      
+						
+						      console.log($scope.data);
+				
+						    },
+						    onRegisterApi: function(gridApi){
+						      $scope.gridApi = gridApi;
+						    }
+						    }
+				})
+				
+
 				
 				.controller('EditMasterController',
 				function($scope,$state, $stateParams, DBService,modelService) {
@@ -183,7 +214,7 @@ angular
 								{
 									name : 'actions',
 									displayName : 'Actions',
-									cellTemplate : '<button id="editBtn" type="button" class="btn btn-primary" ng-click="grid.appScope.projectionedit(row.entity)">EDIT</button>'
+									cellTemplate : '<button id="editBtn" type="button" class="glyphicon glyphicon-pencil" ng-click="grid.appScope.projectionedit(row.entity)">EDIT</button>'
 		
 							} 
 								]

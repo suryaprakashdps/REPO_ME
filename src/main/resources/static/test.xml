@@ -22,7 +22,7 @@
 	</select>
 	
 		<select id="getmasterdata" resultType="com.tcs.Repo.model.MasterVO">
-		select * from  master_data
+		select * from  master_data order by rec_key
 
 	</select>
 	
@@ -41,7 +41,7 @@
 		probability=#{probability},
 		brm_name='Vivek',
 		updt_ts=now(),
-		updt_id='Shyam'
+		updt_id='USER'
 		 where rec_key=#{rec_key}
 	</update>
 	
@@ -83,12 +83,54 @@
 	#{probability},
 	'Vivek',
 	now(),
-	'Shyam'
+	'USER'
 	)
 	</insert>
 	
+	<insert id="insertImport" parameterType="java.util.List">
+	
+	Insert into master_data 
+	(
+	
+	tower,	
+	project	,
+	won_number	,
+	won_type	,
+	offsite_location,	
+	service_line	,
+	sub_sp	,
+	project_type,	
+	rate	,
+	probability,	
+	brm_name	,
+	updt_ts	,
+	updt_id
+	) values
+	
+	<foreach collection="importlist" item="importlist" separator="," index="index" >
+
+	(
+	
+	#{importlist.tower},
+	#{importlist.project},
+	#{importlist.won_number},
+	#{importlist.won_type},
+	#{importlist.offsite_location},
+	#{importlist.service_line},
+	#{importlist.sub_sp},
+	#{importlist.project_type},
+	#{importlist.rate},
+	#{importlist.probability},
+	'Vivek',
+	now(),
+	'USER'
+	)
+</foreach>
+
+</insert>
+	
 	<select id="getProjectionData" resultType="com.tcs.Repo.model.ProjectionVO">
-		select * from projections
+		select * from projections order by rec_key
 
 	</select>
 	
@@ -118,7 +160,7 @@
 	#{resource_count},
 	#{revenue},
 	now(),	
-    'Shyam'
+    'USER'
 	) ON CONFLICT ON CONSTRAINT projections_pkey
 	DO UPDATE SET resource_count = #{resource_count}, revenue = #{revenue}
 	</insert>

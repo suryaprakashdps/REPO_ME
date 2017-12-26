@@ -17,7 +17,21 @@ angular.module('app.services', []).factory('DBService', function($resource) {
 	    })
 	}
 	
-	}]).service('modelService',[function(){
+	}])
+	
+	.service('importService',['$http',function($http){
+	
+	this.importservice = function importservice(data) {
+	    return $http({
+	        method : 'POST',
+	        url : '/api/v1/projects/import',
+	        	data:data
+	    })
+	}
+	
+	}])
+	
+	.service('modelService',[function(){
 		
 		var entity={};
 

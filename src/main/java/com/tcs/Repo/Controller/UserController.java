@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.tcs.Repo.model.ImportVO;
 import com.tcs.Repo.model.MasterVO;
 import com.tcs.Repo.model.ProjectionVO;
 import com.tcs.Repo.model.UserVO;
@@ -46,6 +47,26 @@ public class UserController {
 	public UserVO get(@PathVariable int id) {
 		return userService.getuserprofile(id);
 	}
+	
+	@RequestMapping(value = "projects/import", method = RequestMethod.POST)
+	public void importcreate(@RequestBody List<ImportVO> importlist) {
+		
+//		rw.stream().forEach(c -> c.setRec_key(c.getRec_key()));
+//		System.out.println(rw.stream());
+		
+		
+		userService.insertImportdata(importlist);
+
+		System.out.println("inside import");
+		
+		
+		System.out.println(importlist.size());
+	
+		 for(int i = 0; i < importlist.size(); i++) {
+	            System.out.println(importlist.get(i).toString());
+	        }
+	//	return new ResponseEntity<List<ImportVO>>(rw,HttpStatus.OK);
+		}
 
 	@RequestMapping(value = "projects", method = RequestMethod.PUT)
 	public void updateuser( @RequestBody MasterVO mastervo) {

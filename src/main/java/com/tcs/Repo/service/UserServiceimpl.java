@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.tcs.Repo.mapper.QueryMapper;
+import com.tcs.Repo.model.ImportVO;
 import com.tcs.Repo.model.MasterVO;
 import com.tcs.Repo.model.ProjectionVO;
 import com.tcs.Repo.model.UserVO;
@@ -92,6 +93,18 @@ public class UserServiceimpl implements UserService{
 		System.out.println("Entered Projection create method");
 		querymapper.createProjectonData(projectionVO);
 		return projectionVO;
+	}
+
+	@Override
+	public void insertImportdata(List<ImportVO> importlist) {
+		try {
+			querymapper.insertImport(importlist);
+		}
+		catch(Exception ex){
+			
+			ex.printStackTrace();
+		}
+		
 	}
 
 }
