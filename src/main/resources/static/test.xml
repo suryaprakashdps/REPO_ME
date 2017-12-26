@@ -134,6 +134,11 @@
 
 	</select>
 	
+	<select id="getRate" resultType="Double">
+	
+	select rate from master_data where rec_key=#{rec_key}
+	</select>
+	
 	<insert id="createProjectonData" parameterType="com.tcs.Repo.model.ProjectionVO">
 	Insert into projections
 	(
@@ -164,6 +169,20 @@
 	) ON CONFLICT ON CONSTRAINT projections_pkey
 	DO UPDATE SET resource_count = #{resource_count}, revenue = #{revenue}
 	</insert>
+	
+		<update id="updateProjectionData" parameterType="com.tcs.Repo.model.ProjectionVO">
+	update projections set
+	
+	tower=#{tower},	
+	project=#{project},
+	won_number=#{won_number},
+	won_type=#{won_type},
+	updt_ts=now(),
+	updt_user= 'USER'
+	
+	where rec_key=#{rec_key}
+	
+	</update>
 	
 		
 </mapper>

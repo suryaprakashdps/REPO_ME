@@ -82,6 +82,12 @@
 	        controller:'ProjImportController'
 	    })
 	    
+	      .state('viewproject',{
+	        url:'/projects/viewprojectdata',
+	        templateUrl: viewsPrefix + 'viewproj.html',
+	        controller:'ViewProjController'
+	    })
+	    
 	    .state('addprojection',{
 	        url:'/projection/new',
 	        templateUrl: viewsPrefix + 'addProjection.html',

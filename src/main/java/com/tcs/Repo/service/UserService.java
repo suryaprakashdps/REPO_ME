@@ -1,5 +1,6 @@
 package com.tcs.Repo.service;
 
+import java.math.BigInteger;
 import java.util.List;
 
 import com.tcs.Repo.model.ImportVO;
@@ -32,6 +33,10 @@ public interface UserService {
 	ProjectionVO createProjecton(ProjectionVO projectionVO);
 
 	void insertImportdata(List<ImportVO> importlist);
+
+	Double getRate(BigInteger rec_key);
+
+	void updateProjectiondata(ProjectionVO pvo);
 	
 	
 

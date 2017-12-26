@@ -1,5 +1,6 @@
 package com.tcs.Repo.service;
 
+import java.math.BigInteger;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -101,6 +102,24 @@ public class UserServiceimpl implements UserService{
 			querymapper.insertImport(importlist);
 		}
 		catch(Exception ex){
+			
+			ex.printStackTrace();
+		}
+		
+	}
+
+	@Override
+	public Double getRate(BigInteger rec_key) {
+		// TODO Auto-generated method stub
+		return querymapper.getRate(rec_key);
+	}
+
+	@Override
+	public void updateProjectiondata(ProjectionVO pvo) {
+		
+		try{
+		 querymapper.updateProjectionData(pvo);
+		}catch(Exception ex){
 			
 			ex.printStackTrace();
 		}

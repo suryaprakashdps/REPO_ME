@@ -74,9 +74,19 @@ public class UserController {
 		System.out.println("inside update user controller java"+mastervo.getProject());
 		//return "success";
 		
+		ProjectionVO pvo=new ProjectionVO();
+		
+		pvo.setRec_key(mastervo.getRec_key());
+		pvo.setProject(mastervo.getProject());
+		pvo.setTower(mastervo.getTower());
+		pvo.setWon_number(mastervo.getWon_number());
+		pvo.setWon_type(mastervo.getWon_type());
+		
 	
 				
 				userService.updatemasterdata(mastervo);
+				
+			userService.updateProjectiondata(pvo);
 	}
 
 	@RequestMapping(value = "projects/{id}",method = RequestMethod.DELETE)
@@ -121,8 +131,11 @@ public class UserController {
 
 	@RequestMapping(value = "projection", method = RequestMethod.PUT)
 	public void updateprojection( @RequestBody ProjectionVO projectionvo) {
-		System.out.println("inside update user controller java"+projectionvo.getRec_key());
-		System.out.println("inside update user controller java"+projectionvo.getTower());
+		Double rate=userService.getRate(projectionvo.getRec_key());
+		
+		System.out.println("inside update user controller java"+rate);
+		System.out.println("inside update user controller java"+projectionvo.getResource_count());
+	projectionvo.setRevenue(projectionvo.getResource_count()*rate);
 		//return "success";
 		
 	

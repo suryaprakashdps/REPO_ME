@@ -1,5 +1,6 @@
 package com.tcs.Repo.mapper;
 
+import java.math.BigInteger;
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
@@ -32,6 +33,8 @@ public interface QueryMapper {
 	public void updateProjectionData(ProjectionVO projectionVO);
 
 	public void createProjectonData(ProjectionVO projectionVO);
+
+	public Double getRate(BigInteger rec_key);
 	
 	
 }

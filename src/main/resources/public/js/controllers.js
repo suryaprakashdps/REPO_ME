@@ -97,7 +97,7 @@ angular
 
 				})
 				.controller('ProjCreateController',
-				function($scope, $state, $stateParams, DBService) {
+				function($scope, $state, $stateParams, DBService,modelService) {
 							  
 					$scope.editvalue = new DBService(); // create new user
 					// instance. Properties will be
@@ -106,10 +106,31 @@ angular
 													// a
 						// POST to /api/v1/projects
 						$scope.editvalue.$save(function() {
-							$state.go('projects'); // on success go back to the
+							
+							var entity=$scope.editvalue;
+							console.log(entity);
+							modelService.setentity(entity);
+							$state.go('viewproject'); // on success go back to the
 													// list
 							// i.e. projects state.
 						});
+					};
+				})
+				.controller('ViewProjController',
+				function($scope, $state, $stateParams, DBService,modelService) {
+					$scope.showSuccessAlert=true;
+					$scope.create_project_message="Project Data Modified Successfully"
+							  
+					$scope.editvalue=modelService.getentity();
+					
+					
+					$scope.editproject = function() {
+
+						
+						$state.go('editmaster');
+						
+
+
 					};
 				})
 				
@@ -154,9 +175,10 @@ angular
 					
 					
 					$scope.updatemaster = function(){
+						modelService.setentity($scope.editvalue);
 						console.log($scope.editvalue);
 						$scope.editvalue.$update(function(){
-							$state.go('projects');
+							$state.go('viewproject');
 						});
 						
 					};
