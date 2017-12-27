@@ -54,7 +54,7 @@
 	<insert id="createprojdata" parameterType="com.tcs.Repo.model.MasterVO">
 	Insert into master_data
 	(
-	rec_key	,
+	
 	tower,	
 	project	,
 	won_number	,
@@ -70,7 +70,7 @@
 	updt_id
 	)
 	values(
-	(select max(rec_key)+1 from master_data),
+	
 	#{tower},
 	#{project},
 	#{won_number},
