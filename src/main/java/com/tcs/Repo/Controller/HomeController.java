@@ -9,7 +9,7 @@ public class HomeController {
 	@RequestMapping("/")
 	public String home(){
 		
-		return "Application home page is running!";
+		return "Application home page  running!";
 		
 	}
 
