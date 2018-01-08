@@ -47,7 +47,7 @@ public class UserServiceimpl implements UserService{
 	}
 
 	@Override
-	public UserVO getuserprofile(int id) {
+	public UserVO getuserprofile(String id) {
 		// TODO Auto-generated method stub
 		return querymapper.getuserprofile(id);
 	}

@@ -13,11 +13,28 @@
 	
 	</select>
 	
+		<insert id="createuser" parameterType="com.tcs.Repo.model.UserVO">
+	Insert into repouser
+	(
+	username,
+	password,fname,
+	lname,role,
+	updt_ts	
+	
+	)
+	values(
+	#{username},
+	#{password},
+	#{fname},
+	#{lname},
+	#{role},
+	now()
+	) 
+	</insert>
+	
 	<select id="getuserprofile" resultType="com.tcs.Repo.model.UserVO">
-		select iduser as
-		iduser,email as email,fname as fname,lname as lname,state
-		as state,city
-		as city,cntry as cntry from userprof where iduser= #{id}
+		select username as username,password as password,role as role,fname as fname,lname as lname from repouser
+		where username=#{id}
 
 	</select>
 	
@@ -44,12 +61,6 @@
 		updt_id='USER'
 		 where rec_key=#{rec_key}
 	</update>
-	
-		<insert id="createuser">
-		insert into userprof(email,fname,lname,state,city,cntry) 
-		values(#{email},#{fname},#{lname},#{state},#{city},#{cntry}) 
-
-	</insert>
 	
 	<insert id="createprojdata" parameterType="com.tcs.Repo.model.MasterVO">
 	Insert into master_data

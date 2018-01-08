@@ -18,7 +18,7 @@ public interface UserService {
 
 	UserVO deleteuser(int id);
 
-	UserVO getuserprofile(int id);
+	UserVO getuserprofile(String id);
 
 	List<MasterVO> getmasterdata();
 

@@ -4,7 +4,7 @@ public class UserVO {
 
 	private String username;
 
-	private String iduser;
+	
 
 	private String fname;
 	private String confirmpwd;
@@ -14,22 +14,20 @@ public class UserVO {
 
 	private String email;
 
-	private String state;
-	private String cntry;
-	private String city;
+	private String role;
+	
 
 	public UserVO() { }
 
-	public UserVO(String iduser,String username,String fname,String confirpwd,String lname,String password,String email,String state,String cntry,String city){
-		this.iduser=iduser;
+	public UserVO(String username,String fname,String confirpwd,String lname,String password,String email, String role){
+		
 		this.username=username;
 		this.fname=fname;
 		this.lname=lname;
 		this.password=password;
 		this.email=email;
-		this.state=state;
-		this.cntry=cntry;
-		this.city=city;
+		this.role=role;
+		
 	}
 
 	public String getUsername() {
@@ -72,44 +70,21 @@ public class UserVO {
 		this.password = password;
 	}
 
-	public String getCntry() {
-		return cntry;
-	}
-
-	public void setCntry(String cntry) {
-		this.cntry = cntry;
-	}
-
-	public String getState() {
-		return state;
-	}
-
-	public void setState(String state) {
-		this.state = state;
-	}
-
-	public String getCity() {
-		return city;
-	}
-
-	public void setCity(String city) {
-		this.city = city;
-	}
-
-	public String getIduser() {
-		return iduser;
-	}
-
-	public void setIduser(String iduser) {
-		this.iduser = iduser;
-	}
-
+	
 	public String getConfirmpwd() {
 		return confirmpwd;
 	}
 
 	public void setConfirmpwd(String confirmpwd) {
 		this.confirmpwd = confirmpwd;
+	}
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
 	}
 
 }

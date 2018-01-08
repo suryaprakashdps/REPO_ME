@@ -16,7 +16,7 @@ public interface QueryMapper {
 	
 	public List<UserVO> getuserprof();
 
-	public UserVO getuserprofile(int id);
+	public UserVO getuserprofile(String id);
 
 	public void createuser(UserVO uservo);
 	

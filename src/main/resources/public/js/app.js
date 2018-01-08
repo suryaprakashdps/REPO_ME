@@ -1,6 +1,6 @@
 (function() {
-	var app = angular.module('app', ['ui.router', 'navController', 'ngAnimate', 'ui.bootstrap', 'ngResource', 'app.controllers', 'app.services','ui.grid.pagination',
-		 'ui.grid','ui.grid.exporter', 'ui.grid.importer','ui.grid.selection'])
+	var app = angular.module('app', ['ui.router', 'ngAnimate', 'ui.bootstrap', 'ngResource', 'navcontroller','app.controllers', 'app.services','ui.grid.pagination',
+		 'ui.grid','ui.grid.exporter', 'ui.grid.importer','ui.grid.selection','ngCookies'])
 
 	// define for requirejs loaded modules
 	define('app', [], function() { return app; });
@@ -24,6 +24,24 @@
 			}
 		}
 	}
+	 app.run(run);
+	app.run(function($rootScope){
+		$rootScope.loginflag=false;
+		$rootScope.pages = [
+			{
+				name: 'Home',
+				url: '#/'
+			},
+			{
+				name: 'Login',
+				url: '#/login'
+			},{
+				name: 'Register',
+				url: '#/register'
+			}
+		];
+		console.log('sinide app run',$rootScope.loginflag);
+	});
 
 	app.config(function($stateProvider, $urlRouterProvider, $controllerProvider){
 		var origController = app.controller
@@ -61,6 +79,29 @@
 	       controller:'EditMasterController'
 	    })
 	    
+	     .state('login', {
+             url:'/login',
+	    	 controller: 'LoginController',
+             templateUrl: viewsPrefix +'login.view.html',
+             controllerAs: 'vm'
+            
+         })
+         .state('logout', {
+             url:'/login',
+	    	 controller: 'LoginController',
+             templateUrl: viewsPrefix +'login.view.html',
+             controllerAs: 'vm'
+            
+         })
+
+	     .state('register', {
+	    	 
+	    	 url:'/register',
+             controller: 'RegisterController',
+             templateUrl: viewsPrefix +'register.view.html',
+             controllerAs: 'vm'
+             
+         })
 	    .state('addproj',{
 	        url:'/projects/new',
 	        templateUrl: viewsPrefix + 'Proj-add.html',
@@ -94,7 +135,8 @@
 	        controller:'ProjectionCreateController'
 	    })
 	})
-	.directive('updateTitle', ['$rootScope', '$timeout',
+	
+		.directive('updateTitle', ['$rootScope', '$timeout',
 		function($rootScope, $timeout) {
 			return {
 				link: function(scope, element) {
@@ -111,4 +153,53 @@
 			};
 		}
 	]);
+	
+	    run.$inject = ['$rootScope', '$location', '$cookies', '$http'];
+    function run($rootScope, $location, $cookies, $http) {
+    	
+    	
+    	
+		$rootScope.pages = [
+			{
+				name: 'Home',
+				url: '#/'
+			},
+			{
+				name: 'Login',
+				url: '#/login'
+			},{
+				name: 'Register',
+				url: '#/register'
+			}
+		];
+		
+    	
+        // keep user logged in after page refresh
+        $rootScope.globals = $cookies.getObject('globals') || {};
+        if ($rootScope.globals.currentUser) {
+            $http.defaults.headers.common['Authorization'] = 'Basic ' + $rootScope.globals.currentUser.authdata;
+        $rootScope.pages=$rootScope.globals.currentUser.pages;
+         
+        }
+
+        $rootScope.$on('$locationChangeStart', function (event, next, current) {
+            // redirect to login page if not logged in and trying to access a restricted page
+            var restrictedPage = $.inArray($location.path(), ['/login', '/register']) === -1;
+            var loggedIn = $rootScope.globals.currentUser;
+            
+            if(loggedIn)
+            	{
+            	console.log('inside loggedinif condition in appjs');
+            
+          
+           $rootScope.pages=$rootScope.globals.currentUser.pages;
+            	}
+    
+            if (restrictedPage && !loggedIn) {
+                $location.path('/login');
+            }
+        });
+    }
+	
+
 }());
