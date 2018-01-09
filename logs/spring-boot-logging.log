@@ -6346,3 +6346,1018 @@ org.postgresql.util.PSQLException: ERROR: column "username" does not exist
 2018-01-07 19:20:26.966 DEBUG 2192 --- [http-nio-8080-exec-5] c.t.R.mapper.QueryMapper.getmasterdata   : ==>  Preparing: select * from master_data order by rec_key 
 2018-01-07 19:20:26.966 DEBUG 2192 --- [http-nio-8080-exec-5] c.t.R.mapper.QueryMapper.getmasterdata   : ==> Parameters: 
 2018-01-07 19:20:26.971 DEBUG 2192 --- [http-nio-8080-exec-5] c.t.R.mapper.QueryMapper.getmasterdata   : <==      Total: 324
+2018-01-07 19:23:17.575 DEBUG 2192 --- [http-nio-8080-exec-9] c.t.R.mapper.QueryMapper.getuserprofile  : ==>  Preparing: select username as username,password as password,role as role,fname as fname,lname as lname from repouser where username=? 
+2018-01-07 19:23:17.575 DEBUG 2192 --- [http-nio-8080-exec-9] c.t.R.mapper.QueryMapper.getuserprofile  : ==> Parameters: surya@test.com(String)
+2018-01-07 19:23:17.577 DEBUG 2192 --- [http-nio-8080-exec-9] c.t.R.mapper.QueryMapper.getuserprofile  : <==      Total: 1
+2018-01-07 19:23:17.734 DEBUG 2192 --- [http-nio-8080-exec-2] c.t.R.mapper.QueryMapper.getmasterdata   : ==>  Preparing: select * from master_data order by rec_key 
+2018-01-07 19:23:17.734 DEBUG 2192 --- [http-nio-8080-exec-2] c.t.R.mapper.QueryMapper.getmasterdata   : ==> Parameters: 
+2018-01-07 19:23:17.742 DEBUG 2192 --- [http-nio-8080-exec-2] c.t.R.mapper.QueryMapper.getmasterdata   : <==      Total: 324
+2018-01-07 19:23:45.337 DEBUG 2192 --- [http-nio-8080-exec-10] c.t.R.m.QueryMapper.getProjectionData    : ==>  Preparing: select * from projections order by rec_key 
+2018-01-07 19:23:45.337 DEBUG 2192 --- [http-nio-8080-exec-10] c.t.R.m.QueryMapper.getProjectionData    : ==> Parameters: 
+2018-01-07 19:23:45.341 DEBUG 2192 --- [http-nio-8080-exec-10] c.t.R.m.QueryMapper.getProjectionData    : <==      Total: 12
+2018-01-07 19:23:50.741 DEBUG 2192 --- [http-nio-8080-exec-8] c.t.R.mapper.QueryMapper.getmasterdata   : ==>  Preparing: select * from master_data order by rec_key 
+2018-01-07 19:23:50.742 DEBUG 2192 --- [http-nio-8080-exec-8] c.t.R.mapper.QueryMapper.getmasterdata   : ==> Parameters: 
+2018-01-07 19:23:50.748 DEBUG 2192 --- [http-nio-8080-exec-8] c.t.R.mapper.QueryMapper.getmasterdata   : <==      Total: 324
+2018-01-07 19:23:53.233 DEBUG 2192 --- [http-nio-8080-exec-4] c.t.R.m.QueryMapper.getProjectionData    : ==>  Preparing: select * from projections order by rec_key 
+2018-01-07 19:23:53.234 DEBUG 2192 --- [http-nio-8080-exec-4] c.t.R.m.QueryMapper.getProjectionData    : ==> Parameters: 
+2018-01-07 19:23:53.237 DEBUG 2192 --- [http-nio-8080-exec-4] c.t.R.m.QueryMapper.getProjectionData    : <==      Total: 12
+2018-01-07 19:24:13.253 DEBUG 2192 --- [http-nio-8080-exec-2] c.t.R.mapper.QueryMapper.getuserprofile  : ==>  Preparing: select username as username,password as password,role as role,fname as fname,lname as lname from repouser where username=? 
+2018-01-07 19:24:13.253 DEBUG 2192 --- [http-nio-8080-exec-2] c.t.R.mapper.QueryMapper.getuserprofile  : ==> Parameters: surya@test.com(String)
+2018-01-07 19:24:13.255 DEBUG 2192 --- [http-nio-8080-exec-2] c.t.R.mapper.QueryMapper.getuserprofile  : <==      Total: 1
+2018-01-07 19:24:13.314 DEBUG 2192 --- [http-nio-8080-exec-1] c.t.R.mapper.QueryMapper.getmasterdata   : ==>  Preparing: select * from master_data order by rec_key 
+2018-01-07 19:24:13.314 DEBUG 2192 --- [http-nio-8080-exec-1] c.t.R.mapper.QueryMapper.getmasterdata   : ==> Parameters: 
+2018-01-07 19:24:13.344 DEBUG 2192 --- [http-nio-8080-exec-1] c.t.R.mapper.QueryMapper.getmasterdata   : <==      Total: 324
+2018-01-07 19:46:49.557  INFO 2192 --- [Thread-8] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@42a8e3b4: startup date [Sun Jan 07 16:52:36 CST 2018]; root of context hierarchy
+2018-01-07 19:46:49.560  INFO 2192 --- [Thread-8] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-07 21:25:14.797  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : Starting App on Suriyaprakashs-MacBook-Air.local with PID 3417 (/Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs/target/classes started by suriyaprakashselvaraj in /Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs)
+2018-01-07 21:25:14.802  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : No active profile set, falling back to default profiles: default
+2018-01-07 21:25:14.925  INFO 3417 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@42a8e3b4: startup date [Sun Jan 07 21:25:14 CST 2018]; root of context hierarchy
+2018-01-07 21:25:17.024  INFO 3417 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4811f12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-07 21:25:17.762  INFO 3417 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-07 21:25:17.786  INFO 3417 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-01-07 21:25:17.788  INFO 3417 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-01-07 21:25:17.922  INFO 3417 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-07 21:25:17.923  INFO 3417 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3004 ms
+2018-01-07 21:25:18.378  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-07 21:25:18.386  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-07 21:25:18.387  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-07 21:25:18.388  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-07 21:25:18.389  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-07 21:25:19.950  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@42a8e3b4: startup date [Sun Jan 07 21:25:14 CST 2018]; root of context hierarchy
+2018-01-07 21:25:20.081  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.tcs.Repo.Controller.HomeController.home()
+2018-01-07 21:25:20.100  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/{id}],methods=[DELETE]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.ProjectController.delete(int)
+2018-01-07 21:25:20.102  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:25:20.104  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[POST]}" onto public com.tcs.Repo.model.MasterVO com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:25:20.107  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.MasterVO> com.tcs.Repo.Controller.ProjectController.masterList()
+2018-01-07 21:25:20.110  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/import],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.importcreate(java.util.List<com.tcs.Repo.model.ImportVO>)
+2018-01-07 21:25:20.110  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateuser(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:25:20.111  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.ProjectionVO> com.tcs.Repo.Controller.ProjectController.projectionList()
+2018-01-07 21:25:20.111  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateprojection(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:25:20.113  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users/{id}],methods=[GET]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.get(java.lang.String)
+2018-01-07 21:25:20.114  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users],methods=[POST]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.create(com.tcs.Repo.model.UserVO)
+2018-01-07 21:25:20.119  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-07 21:25:20.120  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-07 21:25:20.142  INFO 3417 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [public/index.html]
+2018-01-07 21:25:20.179  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-07 21:25:20.213  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:25:20.214  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:25:20.297  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:25:20.637  INFO 3417 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-07 21:25:20.733  INFO 3417 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-07 21:25:20.839  INFO 3417 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-07 21:25:20.847  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : Started App in 6.761 seconds (JVM running for 7.39)
+2018-01-07 21:25:23.761  INFO 3417 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-07 21:25:23.761  INFO 3417 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-07 21:25:23.793  INFO 3417 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2018-01-07 21:25:36.223 DEBUG 3417 --- [http-nio-8080-exec-4] c.t.R.mapper.QueryMapper.getuserprofile  : ==>  Preparing: select username as username,password as password,role as role,fname as fname,lname as lname from repouser where username=? 
+2018-01-07 21:25:36.243 DEBUG 3417 --- [http-nio-8080-exec-4] c.t.R.mapper.QueryMapper.getuserprofile  : ==> Parameters: surya@test.com(String)
+2018-01-07 21:25:36.268 DEBUG 3417 --- [http-nio-8080-exec-4] c.t.R.mapper.QueryMapper.getuserprofile  : <==      Total: 1
+2018-01-07 21:25:36.485 DEBUG 3417 --- [http-nio-8080-exec-6] c.t.R.mapper.QueryMapper.getmasterdata   : ==>  Preparing: select * from master_data order by rec_key 
+2018-01-07 21:25:36.486 DEBUG 3417 --- [http-nio-8080-exec-6] c.t.R.mapper.QueryMapper.getmasterdata   : ==> Parameters: 
+2018-01-07 21:25:36.573 DEBUG 3417 --- [http-nio-8080-exec-6] c.t.R.mapper.QueryMapper.getmasterdata   : <==      Total: 324
+2018-01-07 21:25:54.962 DEBUG 3417 --- [http-nio-8080-exec-10] c.t.R.m.QueryMapper.getProjectionData    : ==>  Preparing: select * from projections order by rec_key 
+2018-01-07 21:25:54.963 DEBUG 3417 --- [http-nio-8080-exec-10] c.t.R.m.QueryMapper.getProjectionData    : ==> Parameters: 
+2018-01-07 21:25:54.968 DEBUG 3417 --- [http-nio-8080-exec-10] c.t.R.m.QueryMapper.getProjectionData    : <==      Total: 12
+2018-01-07 21:25:54.986 ERROR 3417 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.tcs.Repo.Controller.ProjectController.projectionList(ProjectController.java:117) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_112]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_112]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_112]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_112]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:114) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_112]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_112]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_112]
+
+2018-01-07 21:34:23.283 DEBUG 3417 --- [http-nio-8080-exec-8] c.t.R.mapper.QueryMapper.getmasterdata   : ==>  Preparing: select * from master_data order by rec_key 
+2018-01-07 21:34:23.287 DEBUG 3417 --- [http-nio-8080-exec-8] c.t.R.mapper.QueryMapper.getmasterdata   : ==> Parameters: 
+2018-01-07 21:34:23.406 DEBUG 3417 --- [http-nio-8080-exec-8] c.t.R.mapper.QueryMapper.getmasterdata   : <==      Total: 324
+2018-01-07 21:34:24.709 DEBUG 3417 --- [http-nio-8080-exec-7] c.t.R.m.QueryMapper.getProjectionData    : ==>  Preparing: select * from projections order by rec_key 
+2018-01-07 21:34:24.709 DEBUG 3417 --- [http-nio-8080-exec-7] c.t.R.m.QueryMapper.getProjectionData    : ==> Parameters: 
+2018-01-07 21:34:24.719 DEBUG 3417 --- [http-nio-8080-exec-7] c.t.R.m.QueryMapper.getProjectionData    : <==      Total: 12
+2018-01-07 21:34:24.721 ERROR 3417 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.tcs.Repo.Controller.ProjectController.projectionList(ProjectController.java:117) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_112]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_112]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_112]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_112]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:114) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_112]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_112]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_112]
+
+2018-01-07 21:35:36.321  INFO 3417 --- [Thread-5] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@42a8e3b4: startup date [Sun Jan 07 21:25:14 CST 2018]; root of context hierarchy
+2018-01-07 21:35:36.323  INFO 3417 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-07 21:35:36.853  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : Starting App on Suriyaprakashs-MacBook-Air.local with PID 3417 (/Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs/target/classes started by suriyaprakashselvaraj in /Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs)
+2018-01-07 21:35:36.854  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : No active profile set, falling back to default profiles: default
+2018-01-07 21:35:36.860  INFO 3417 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@38ca05fa: startup date [Sun Jan 07 21:35:36 CST 2018]; root of context hierarchy
+2018-01-07 21:35:37.371  INFO 3417 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4811f12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-07 21:35:37.451  INFO 3417 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-07 21:35:37.452  INFO 3417 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-01-07 21:35:37.453  INFO 3417 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-01-07 21:35:37.461  INFO 3417 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-07 21:35:37.462  INFO 3417 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 603 ms
+2018-01-07 21:35:37.516  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-07 21:35:37.517  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-07 21:35:37.517  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-07 21:35:37.517  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-07 21:35:37.517  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-07 21:35:37.826  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@38ca05fa: startup date [Sun Jan 07 21:35:36 CST 2018]; root of context hierarchy
+2018-01-07 21:35:37.856  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.tcs.Repo.Controller.HomeController.home()
+2018-01-07 21:35:37.869  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/{id}],methods=[DELETE]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.ProjectController.delete(int)
+2018-01-07 21:35:37.870  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:35:37.870  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[POST]}" onto public com.tcs.Repo.model.MasterVO com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:35:37.871  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.MasterVO> com.tcs.Repo.Controller.ProjectController.masterList()
+2018-01-07 21:35:37.871  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/import],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.importcreate(java.util.List<com.tcs.Repo.model.ImportVO>)
+2018-01-07 21:35:37.872  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateuser(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:35:37.872  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.ProjectionVO> com.tcs.Repo.Controller.ProjectController.projectionList()
+2018-01-07 21:35:37.873  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateprojection(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:35:37.874  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users/{id}],methods=[GET]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.get(java.lang.String)
+2018-01-07 21:35:37.875  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users],methods=[POST]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.create(com.tcs.Repo.model.UserVO)
+2018-01-07 21:35:37.877  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-07 21:35:37.878  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-07 21:35:37.881  INFO 3417 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [public/index.html]
+2018-01-07 21:35:37.885  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-07 21:35:37.891  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:35:37.891  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:35:37.912  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:35:37.982  INFO 3417 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-07 21:35:38.062  INFO 3417 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-07 21:35:38.081  INFO 3417 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-07 21:35:38.091  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : Started App in 1.481 seconds (JVM running for 624.607)
+2018-01-07 21:35:41.749  INFO 3417 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-07 21:35:41.750  INFO 3417 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-07 21:35:41.754  INFO 3417 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 4 ms
+2018-01-07 21:35:44.767 DEBUG 3417 --- [http-nio-8080-exec-1] c.t.R.mapper.QueryMapper.getmasterdata   : ==>  Preparing: select * from master_data order by rec_key 
+2018-01-07 21:35:44.767 DEBUG 3417 --- [http-nio-8080-exec-1] c.t.R.mapper.QueryMapper.getmasterdata   : ==> Parameters: 
+2018-01-07 21:35:44.797 DEBUG 3417 --- [http-nio-8080-exec-1] c.t.R.mapper.QueryMapper.getmasterdata   : <==      Total: 324
+2018-01-07 21:35:46.405 DEBUG 3417 --- [http-nio-8080-exec-2] c.t.R.m.QueryMapper.getProjectionData    : ==>  Preparing: select * from projections order by rec_key 
+2018-01-07 21:35:46.411 DEBUG 3417 --- [http-nio-8080-exec-2] c.t.R.m.QueryMapper.getProjectionData    : ==> Parameters: 
+2018-01-07 21:35:46.418 DEBUG 3417 --- [http-nio-8080-exec-2] c.t.R.m.QueryMapper.getProjectionData    : <==      Total: 12
+2018-01-07 21:44:24.986  INFO 3417 --- [Thread-10] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@38ca05fa: startup date [Sun Jan 07 21:35:36 CST 2018]; root of context hierarchy
+2018-01-07 21:44:24.990  INFO 3417 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-07 21:44:25.328  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : Starting App on Suriyaprakashs-MacBook-Air.local with PID 3417 (/Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs/target/classes started by suriyaprakashselvaraj in /Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs)
+2018-01-07 21:44:25.329  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : No active profile set, falling back to default profiles: default
+2018-01-07 21:44:25.332  INFO 3417 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5eb4a07f: startup date [Sun Jan 07 21:44:25 CST 2018]; root of context hierarchy
+2018-01-07 21:44:25.905  INFO 3417 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4811f12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-07 21:44:25.985  INFO 3417 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-07 21:44:25.987  INFO 3417 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-01-07 21:44:25.987  INFO 3417 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-01-07 21:44:25.995  INFO 3417 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-07 21:44:25.996  INFO 3417 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 664 ms
+2018-01-07 21:44:26.041  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-07 21:44:26.042  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-07 21:44:26.042  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-07 21:44:26.042  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-07 21:44:26.042  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-07 21:44:26.278  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5eb4a07f: startup date [Sun Jan 07 21:44:25 CST 2018]; root of context hierarchy
+2018-01-07 21:44:26.287  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.tcs.Repo.Controller.HomeController.home()
+2018-01-07 21:44:26.289  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/{id}],methods=[DELETE]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.ProjectController.delete(int)
+2018-01-07 21:44:26.290  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:44:26.290  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[POST]}" onto public com.tcs.Repo.model.MasterVO com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:44:26.290  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.MasterVO> com.tcs.Repo.Controller.ProjectController.masterList()
+2018-01-07 21:44:26.291  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/import],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.importcreate(java.util.List<com.tcs.Repo.model.ImportVO>)
+2018-01-07 21:44:26.291  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateuser(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:44:26.291  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.ProjectionVO> com.tcs.Repo.Controller.ProjectController.projectionList()
+2018-01-07 21:44:26.291  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateprojection(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:44:26.295  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users/{id}],methods=[GET]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.get(java.lang.String)
+2018-01-07 21:44:26.296  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users],methods=[POST]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.create(com.tcs.Repo.model.UserVO)
+2018-01-07 21:44:26.297  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-07 21:44:26.298  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-07 21:44:26.301  INFO 3417 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [public/index.html]
+2018-01-07 21:44:26.304  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-07 21:44:26.309  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:44:26.310  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:44:26.327  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:44:26.385  INFO 3417 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-07 21:44:26.440  INFO 3417 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-07 21:44:26.451  INFO 3417 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-07 21:44:26.453  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : Started App in 1.177 seconds (JVM running for 1125.532)
+2018-01-07 21:46:04.421  INFO 3417 --- [Thread-16] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5eb4a07f: startup date [Sun Jan 07 21:44:25 CST 2018]; root of context hierarchy
+2018-01-07 21:46:04.423  INFO 3417 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-07 21:46:04.876  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : Starting App on Suriyaprakashs-MacBook-Air.local with PID 3417 (/Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs/target/classes started by suriyaprakashselvaraj in /Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs)
+2018-01-07 21:46:04.877  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : No active profile set, falling back to default profiles: default
+2018-01-07 21:46:04.880  INFO 3417 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6bb0f254: startup date [Sun Jan 07 21:46:04 CST 2018]; root of context hierarchy
+2018-01-07 21:46:05.417  INFO 3417 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4811f12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-07 21:46:05.479  INFO 3417 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-07 21:46:05.480  INFO 3417 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-01-07 21:46:05.481  INFO 3417 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-01-07 21:46:05.488  INFO 3417 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-07 21:46:05.490  INFO 3417 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 610 ms
+2018-01-07 21:46:05.532  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-07 21:46:05.533  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-07 21:46:05.534  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-07 21:46:05.534  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-07 21:46:05.534  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-07 21:46:05.771  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6bb0f254: startup date [Sun Jan 07 21:46:04 CST 2018]; root of context hierarchy
+2018-01-07 21:46:05.778  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.tcs.Repo.Controller.HomeController.home()
+2018-01-07 21:46:05.780  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/{id}],methods=[DELETE]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.ProjectController.delete(int)
+2018-01-07 21:46:05.782  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:46:05.783  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[POST]}" onto public com.tcs.Repo.model.MasterVO com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:46:05.784  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.MasterVO> com.tcs.Repo.Controller.ProjectController.masterList()
+2018-01-07 21:46:05.786  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/import],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.importcreate(java.util.List<com.tcs.Repo.model.ImportVO>)
+2018-01-07 21:46:05.786  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateuser(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:46:05.786  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.ProjectionVO> com.tcs.Repo.Controller.ProjectController.projectionList()
+2018-01-07 21:46:05.787  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateprojection(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:46:05.788  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users/{id}],methods=[GET]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.get(java.lang.String)
+2018-01-07 21:46:05.788  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users],methods=[POST]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.create(com.tcs.Repo.model.UserVO)
+2018-01-07 21:46:05.790  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-07 21:46:05.790  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-07 21:46:05.793  INFO 3417 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [public/index.html]
+2018-01-07 21:46:05.796  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-07 21:46:05.798  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:46:05.800  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:46:05.811  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:46:05.872  INFO 3417 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-07 21:46:05.919  INFO 3417 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-07 21:46:05.932  INFO 3417 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-07 21:46:05.938  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : Started App in 1.321 seconds (JVM running for 1225.014)
+2018-01-07 21:46:30.671  INFO 3417 --- [Thread-21] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6bb0f254: startup date [Sun Jan 07 21:46:04 CST 2018]; root of context hierarchy
+2018-01-07 21:46:30.673  INFO 3417 --- [Thread-21] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-07 21:46:30.920  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : Starting App on Suriyaprakashs-MacBook-Air.local with PID 3417 (/Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs/target/classes started by suriyaprakashselvaraj in /Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs)
+2018-01-07 21:46:30.920  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : No active profile set, falling back to default profiles: default
+2018-01-07 21:46:30.929  INFO 3417 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a103ff5: startup date [Sun Jan 07 21:46:30 CST 2018]; root of context hierarchy
+2018-01-07 21:46:31.484  INFO 3417 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4811f12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-07 21:46:31.570  INFO 3417 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-07 21:46:31.571  INFO 3417 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-01-07 21:46:31.571  INFO 3417 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-01-07 21:46:31.580  INFO 3417 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-07 21:46:31.581  INFO 3417 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 652 ms
+2018-01-07 21:46:31.627  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-07 21:46:31.628  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-07 21:46:31.628  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-07 21:46:31.628  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-07 21:46:31.628  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-07 21:46:31.841  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a103ff5: startup date [Sun Jan 07 21:46:30 CST 2018]; root of context hierarchy
+2018-01-07 21:46:31.847  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.tcs.Repo.Controller.HomeController.home()
+2018-01-07 21:46:31.849  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/{id}],methods=[DELETE]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.ProjectController.delete(int)
+2018-01-07 21:46:31.849  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:46:31.849  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[POST]}" onto public com.tcs.Repo.model.MasterVO com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:46:31.850  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.MasterVO> com.tcs.Repo.Controller.ProjectController.masterList()
+2018-01-07 21:46:31.850  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/import],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.importcreate(java.util.List<com.tcs.Repo.model.ImportVO>)
+2018-01-07 21:46:31.850  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateuser(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:46:31.850  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.ProjectionVO> com.tcs.Repo.Controller.ProjectController.projectionList()
+2018-01-07 21:46:31.850  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateprojection(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:46:31.851  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users/{id}],methods=[GET]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.get(java.lang.String)
+2018-01-07 21:46:31.851  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users],methods=[POST]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.create(com.tcs.Repo.model.UserVO)
+2018-01-07 21:46:31.852  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-07 21:46:31.853  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-07 21:46:31.856  INFO 3417 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [public/index.html]
+2018-01-07 21:46:31.858  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-07 21:46:31.862  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:46:31.862  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:46:31.874  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:46:31.924  INFO 3417 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-07 21:46:31.980  INFO 3417 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-07 21:46:31.989  INFO 3417 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-07 21:46:31.991  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : Started App in 1.136 seconds (JVM running for 1251.066)
+2018-01-07 21:47:07.915  INFO 3417 --- [Thread-26] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a103ff5: startup date [Sun Jan 07 21:46:30 CST 2018]; root of context hierarchy
+2018-01-07 21:47:07.917  INFO 3417 --- [Thread-26] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-07 21:47:08.117  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : Starting App on Suriyaprakashs-MacBook-Air.local with PID 3417 (/Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs/target/classes started by suriyaprakashselvaraj in /Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs)
+2018-01-07 21:47:08.117  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : No active profile set, falling back to default profiles: default
+2018-01-07 21:47:08.132  INFO 3417 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5537e5d3: startup date [Sun Jan 07 21:47:08 CST 2018]; root of context hierarchy
+2018-01-07 21:47:08.665  INFO 3417 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4811f12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-07 21:47:08.728  INFO 3417 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-07 21:47:08.730  INFO 3417 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-01-07 21:47:08.730  INFO 3417 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-01-07 21:47:08.737  INFO 3417 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-07 21:47:08.738  INFO 3417 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 606 ms
+2018-01-07 21:47:08.781  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-07 21:47:08.782  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-07 21:47:08.783  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-07 21:47:08.783  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-07 21:47:08.783  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-07 21:47:09.006  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5537e5d3: startup date [Sun Jan 07 21:47:08 CST 2018]; root of context hierarchy
+2018-01-07 21:47:09.011  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.tcs.Repo.Controller.HomeController.home()
+2018-01-07 21:47:09.013  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/{id}],methods=[DELETE]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.ProjectController.delete(int)
+2018-01-07 21:47:09.014  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:47:09.014  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[POST]}" onto public com.tcs.Repo.model.MasterVO com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:47:09.014  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.MasterVO> com.tcs.Repo.Controller.ProjectController.masterList()
+2018-01-07 21:47:09.014  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/import],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.importcreate(java.util.List<com.tcs.Repo.model.ImportVO>)
+2018-01-07 21:47:09.015  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateuser(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:47:09.015  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.ProjectionVO> com.tcs.Repo.Controller.ProjectController.projectionList()
+2018-01-07 21:47:09.015  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateprojection(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:47:09.016  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users/{id}],methods=[GET]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.get(java.lang.String)
+2018-01-07 21:47:09.016  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users],methods=[POST]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.create(com.tcs.Repo.model.UserVO)
+2018-01-07 21:47:09.018  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-07 21:47:09.018  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-07 21:47:09.021  INFO 3417 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [public/index.html]
+2018-01-07 21:47:09.024  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-07 21:47:09.028  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:47:09.028  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:47:09.042  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:47:09.091  INFO 3417 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-07 21:47:09.147  INFO 3417 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-07 21:47:09.157  INFO 3417 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-07 21:47:09.165  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : Started App in 1.1 seconds (JVM running for 1288.239)
+2018-01-07 21:47:40.051  INFO 3417 --- [Thread-31] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5537e5d3: startup date [Sun Jan 07 21:47:08 CST 2018]; root of context hierarchy
+2018-01-07 21:47:40.053  INFO 3417 --- [Thread-31] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-07 21:47:40.345  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : Starting App on Suriyaprakashs-MacBook-Air.local with PID 3417 (/Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs/target/classes started by suriyaprakashselvaraj in /Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs)
+2018-01-07 21:47:40.346  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : No active profile set, falling back to default profiles: default
+2018-01-07 21:47:40.349  INFO 3417 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44aceace: startup date [Sun Jan 07 21:47:40 CST 2018]; root of context hierarchy
+2018-01-07 21:47:40.852  INFO 3417 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4811f12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-07 21:47:40.911  INFO 3417 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-07 21:47:40.913  INFO 3417 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-01-07 21:47:40.913  INFO 3417 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-01-07 21:47:40.920  INFO 3417 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-07 21:47:40.921  INFO 3417 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 572 ms
+2018-01-07 21:47:40.964  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-07 21:47:40.965  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-07 21:47:40.965  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-07 21:47:40.966  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-07 21:47:40.966  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-07 21:47:41.172  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44aceace: startup date [Sun Jan 07 21:47:40 CST 2018]; root of context hierarchy
+2018-01-07 21:47:41.178  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.tcs.Repo.Controller.HomeController.home()
+2018-01-07 21:47:41.180  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/{id}],methods=[DELETE]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.ProjectController.delete(int)
+2018-01-07 21:47:41.180  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:47:41.180  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[POST]}" onto public com.tcs.Repo.model.MasterVO com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:47:41.181  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.MasterVO> com.tcs.Repo.Controller.ProjectController.masterList()
+2018-01-07 21:47:41.181  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/import],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.importcreate(java.util.List<com.tcs.Repo.model.ImportVO>)
+2018-01-07 21:47:41.181  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateuser(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:47:41.181  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.ProjectionVO> com.tcs.Repo.Controller.ProjectController.projectionList()
+2018-01-07 21:47:41.181  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateprojection(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:47:41.182  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users/{id}],methods=[GET]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.get(java.lang.String)
+2018-01-07 21:47:41.182  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users],methods=[POST]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.create(com.tcs.Repo.model.UserVO)
+2018-01-07 21:47:41.184  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-07 21:47:41.184  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-07 21:47:41.187  INFO 3417 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [public/index.html]
+2018-01-07 21:47:41.189  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-07 21:47:41.192  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:47:41.192  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:47:41.204  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:47:41.247  INFO 3417 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-07 21:47:41.296  INFO 3417 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-07 21:47:41.305  INFO 3417 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-07 21:47:41.307  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : Started App in 1.04 seconds (JVM running for 1320.38)
+2018-01-07 21:48:30.502  INFO 3417 --- [Thread-36] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44aceace: startup date [Sun Jan 07 21:47:40 CST 2018]; root of context hierarchy
+2018-01-07 21:48:30.505  INFO 3417 --- [Thread-36] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-07 21:48:30.931  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : Starting App on Suriyaprakashs-MacBook-Air.local with PID 3417 (/Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs/target/classes started by suriyaprakashselvaraj in /Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs)
+2018-01-07 21:48:30.932  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : No active profile set, falling back to default profiles: default
+2018-01-07 21:48:30.935  INFO 3417 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1faaad86: startup date [Sun Jan 07 21:48:30 CST 2018]; root of context hierarchy
+2018-01-07 21:48:31.471  INFO 3417 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4811f12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-07 21:48:31.543  INFO 3417 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-07 21:48:31.554  INFO 3417 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-01-07 21:48:31.554  INFO 3417 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-01-07 21:48:31.561  INFO 3417 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-07 21:48:31.565  INFO 3417 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 629 ms
+2018-01-07 21:48:31.608  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-07 21:48:31.608  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-07 21:48:31.609  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-07 21:48:31.609  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-07 21:48:31.609  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-07 21:48:31.817  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1faaad86: startup date [Sun Jan 07 21:48:30 CST 2018]; root of context hierarchy
+2018-01-07 21:48:31.825  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.tcs.Repo.Controller.HomeController.home()
+2018-01-07 21:48:31.828  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/{id}],methods=[DELETE]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.ProjectController.delete(int)
+2018-01-07 21:48:31.841  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:48:31.842  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[POST]}" onto public com.tcs.Repo.model.MasterVO com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:48:31.842  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.MasterVO> com.tcs.Repo.Controller.ProjectController.masterList()
+2018-01-07 21:48:31.843  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/import],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.importcreate(java.util.List<com.tcs.Repo.model.ImportVO>)
+2018-01-07 21:48:31.843  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateuser(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:48:31.843  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.ProjectionVO> com.tcs.Repo.Controller.ProjectController.projectionList()
+2018-01-07 21:48:31.843  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateprojection(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:48:31.844  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users/{id}],methods=[GET]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.get(java.lang.String)
+2018-01-07 21:48:31.845  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users],methods=[POST]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.create(com.tcs.Repo.model.UserVO)
+2018-01-07 21:48:31.846  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-07 21:48:31.847  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-07 21:48:31.850  INFO 3417 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [public/index.html]
+2018-01-07 21:48:31.852  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-07 21:48:31.856  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:48:31.857  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:48:31.869  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:48:31.912  INFO 3417 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-07 21:48:31.963  INFO 3417 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-07 21:48:31.985  INFO 3417 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-07 21:48:31.988  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : Started App in 1.323 seconds (JVM running for 1371.059)
+2018-01-07 21:48:42.473  INFO 3417 --- [Thread-41] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1faaad86: startup date [Sun Jan 07 21:48:30 CST 2018]; root of context hierarchy
+2018-01-07 21:48:42.476  INFO 3417 --- [Thread-41] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-07 21:48:42.777  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : Starting App on Suriyaprakashs-MacBook-Air.local with PID 3417 (/Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs/target/classes started by suriyaprakashselvaraj in /Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs)
+2018-01-07 21:48:42.778  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : No active profile set, falling back to default profiles: default
+2018-01-07 21:48:42.780  INFO 3417 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@790492c9: startup date [Sun Jan 07 21:48:42 CST 2018]; root of context hierarchy
+2018-01-07 21:48:43.222  INFO 3417 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4811f12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-07 21:48:43.283  INFO 3417 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-07 21:48:43.286  INFO 3417 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-01-07 21:48:43.286  INFO 3417 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-01-07 21:48:43.292  INFO 3417 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-07 21:48:43.293  INFO 3417 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 513 ms
+2018-01-07 21:48:43.335  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-07 21:48:43.336  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-07 21:48:43.336  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-07 21:48:43.336  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-07 21:48:43.337  INFO 3417 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-07 21:48:43.548  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@790492c9: startup date [Sun Jan 07 21:48:42 CST 2018]; root of context hierarchy
+2018-01-07 21:48:43.552  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.tcs.Repo.Controller.HomeController.home()
+2018-01-07 21:48:43.554  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/{id}],methods=[DELETE]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.ProjectController.delete(int)
+2018-01-07 21:48:43.554  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:48:43.554  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[POST]}" onto public com.tcs.Repo.model.MasterVO com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:48:43.555  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.MasterVO> com.tcs.Repo.Controller.ProjectController.masterList()
+2018-01-07 21:48:43.555  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/import],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.importcreate(java.util.List<com.tcs.Repo.model.ImportVO>)
+2018-01-07 21:48:43.555  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateuser(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:48:43.555  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.ProjectionVO> com.tcs.Repo.Controller.ProjectController.projectionList()
+2018-01-07 21:48:43.555  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateprojection(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:48:43.556  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users/{id}],methods=[GET]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.get(java.lang.String)
+2018-01-07 21:48:43.556  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users],methods=[POST]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.create(com.tcs.Repo.model.UserVO)
+2018-01-07 21:48:43.557  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-07 21:48:43.557  INFO 3417 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-07 21:48:43.559  INFO 3417 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [public/index.html]
+2018-01-07 21:48:43.560  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-07 21:48:43.563  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:48:43.568  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:48:43.579  INFO 3417 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:48:43.620  INFO 3417 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-07 21:48:43.664  INFO 3417 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-07 21:48:43.673  INFO 3417 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-07 21:48:43.675  INFO 3417 --- [restartedMain] com.tcs.Repo.App                         : Started App in 0.934 seconds (JVM running for 1382.746)
+2018-01-07 21:48:53.696  INFO 3417 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-07 21:48:53.697  INFO 3417 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-07 21:48:53.701  INFO 3417 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 4 ms
+2018-01-07 21:48:56.496 DEBUG 3417 --- [http-nio-8080-exec-1] c.t.R.mapper.QueryMapper.getmasterdata   : ==>  Preparing: select * from master_data order by rec_key 
+2018-01-07 21:48:56.498 DEBUG 3417 --- [http-nio-8080-exec-1] c.t.R.mapper.QueryMapper.getmasterdata   : ==> Parameters: 
+2018-01-07 21:48:56.522 DEBUG 3417 --- [http-nio-8080-exec-1] c.t.R.mapper.QueryMapper.getmasterdata   : <==      Total: 324
+2018-01-07 21:48:57.520 DEBUG 3417 --- [http-nio-8080-exec-2] c.t.R.m.QueryMapper.getProjectionData    : ==>  Preparing: select * from projections order by rec_key 
+2018-01-07 21:48:57.523 DEBUG 3417 --- [http-nio-8080-exec-2] c.t.R.m.QueryMapper.getProjectionData    : ==> Parameters: 
+2018-01-07 21:48:57.534 DEBUG 3417 --- [http-nio-8080-exec-2] c.t.R.m.QueryMapper.getProjectionData    : <==      Total: 12
+2018-01-07 21:49:30.518 ERROR 3417 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.OutOfMemoryError: Java heap space] with root cause
+
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:3181) ~[na:1.8.0_112]
+	at java.util.ArrayList.grow(ArrayList.java:261) ~[na:1.8.0_112]
+	at java.util.ArrayList.ensureExplicitCapacity(ArrayList.java:235) ~[na:1.8.0_112]
+	at java.util.ArrayList.ensureCapacityInternal(ArrayList.java:227) ~[na:1.8.0_112]
+	at java.util.ArrayList.add(ArrayList.java:458) ~[na:1.8.0_112]
+	at com.tcs.Repo.Controller.ProjectController.projectionList(ProjectController.java:117) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_112]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_112]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_112]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_112]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:114) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+
+2018-01-07 21:49:30.835 DEBUG 3417 --- [http-nio-8080-exec-3] c.t.R.mapper.QueryMapper.getmasterdata   : ==>  Preparing: select * from master_data order by rec_key 
+2018-01-07 21:49:30.835 DEBUG 3417 --- [http-nio-8080-exec-3] c.t.R.mapper.QueryMapper.getmasterdata   : ==> Parameters: 
+2018-01-07 21:49:30.855 DEBUG 3417 --- [http-nio-8080-exec-3] c.t.R.mapper.QueryMapper.getmasterdata   : <==      Total: 324
+2018-01-07 21:49:30.999  INFO 3417 --- [Thread-50] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@790492c9: startup date [Sun Jan 07 21:48:42 CST 2018]; root of context hierarchy
+2018-01-07 21:49:31.003  INFO 3417 --- [Thread-50] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-07 21:49:39.800  INFO 3549 --- [restartedMain] com.tcs.Repo.App                         : Starting App on Suriyaprakashs-MacBook-Air.local with PID 3549 (/Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs/target/classes started by suriyaprakashselvaraj in /Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs)
+2018-01-07 21:49:39.805  INFO 3549 --- [restartedMain] com.tcs.Repo.App                         : No active profile set, falling back to default profiles: default
+2018-01-07 21:49:39.966  INFO 3549 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@58afc79c: startup date [Sun Jan 07 21:49:39 CST 2018]; root of context hierarchy
+2018-01-07 21:49:41.894  INFO 3549 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bba1ee21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-07 21:49:42.591  INFO 3549 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-07 21:49:42.613  INFO 3549 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-01-07 21:49:42.618  INFO 3549 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-01-07 21:49:42.771  INFO 3549 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-07 21:49:42.772  INFO 3549 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2811 ms
+2018-01-07 21:49:43.041  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-07 21:49:43.046  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-07 21:49:43.047  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-07 21:49:43.048  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-07 21:49:43.050  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-07 21:49:44.174  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@58afc79c: startup date [Sun Jan 07 21:49:39 CST 2018]; root of context hierarchy
+2018-01-07 21:49:44.268  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.tcs.Repo.Controller.HomeController.home()
+2018-01-07 21:49:44.276  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/{id}],methods=[DELETE]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.ProjectController.delete(int)
+2018-01-07 21:49:44.277  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:49:44.278  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[POST]}" onto public com.tcs.Repo.model.MasterVO com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:49:44.278  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.MasterVO> com.tcs.Repo.Controller.ProjectController.masterList()
+2018-01-07 21:49:44.280  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/import],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.importcreate(java.util.List<com.tcs.Repo.model.ImportVO>)
+2018-01-07 21:49:44.281  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateuser(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:49:44.281  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.ProjectionVO> com.tcs.Repo.Controller.ProjectController.projectionList()
+2018-01-07 21:49:44.282  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateprojection(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:49:44.284  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users/{id}],methods=[GET]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.get(java.lang.String)
+2018-01-07 21:49:44.284  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users],methods=[POST]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.create(com.tcs.Repo.model.UserVO)
+2018-01-07 21:49:44.291  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-07 21:49:44.293  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-07 21:49:44.298  INFO 3549 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [public/index.html]
+2018-01-07 21:49:44.316  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-07 21:49:44.336  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:49:44.337  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:49:44.408  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:49:44.686  INFO 3549 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-07 21:49:44.766  INFO 3549 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-07 21:49:44.867  INFO 3549 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-07 21:49:44.880  INFO 3549 --- [restartedMain] com.tcs.Repo.App                         : Started App in 5.631 seconds (JVM running for 6.272)
+2018-01-07 21:49:54.696  INFO 3549 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-07 21:49:54.696  INFO 3549 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-07 21:49:54.720  INFO 3549 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-01-07 21:49:58.904 DEBUG 3549 --- [http-nio-8080-exec-5] c.t.R.mapper.QueryMapper.getmasterdata   : ==>  Preparing: select * from master_data order by rec_key 
+2018-01-07 21:49:58.921 DEBUG 3549 --- [http-nio-8080-exec-5] c.t.R.mapper.QueryMapper.getmasterdata   : ==> Parameters: 
+2018-01-07 21:49:59.033 DEBUG 3549 --- [http-nio-8080-exec-5] c.t.R.mapper.QueryMapper.getmasterdata   : <==      Total: 324
+2018-01-07 21:50:01.268 DEBUG 3549 --- [http-nio-8080-exec-7] c.t.R.m.QueryMapper.getProjectionData    : ==>  Preparing: select * from projections order by rec_key 
+2018-01-07 21:50:01.269 DEBUG 3549 --- [http-nio-8080-exec-7] c.t.R.m.QueryMapper.getProjectionData    : ==> Parameters: 
+2018-01-07 21:50:01.273 DEBUG 3549 --- [http-nio-8080-exec-7] c.t.R.m.QueryMapper.getProjectionData    : <==      Total: 12
+2018-01-07 21:50:52.639 ERROR 3549 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.OutOfMemoryError: Java heap space] with root cause
+
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:3181) ~[na:1.8.0_112]
+	at java.util.ArrayList.grow(ArrayList.java:261) ~[na:1.8.0_112]
+	at java.util.ArrayList.ensureExplicitCapacity(ArrayList.java:235) ~[na:1.8.0_112]
+	at java.util.ArrayList.ensureCapacityInternal(ArrayList.java:227) ~[na:1.8.0_112]
+	at java.util.ArrayList.add(ArrayList.java:458) ~[na:1.8.0_112]
+	at com.tcs.Repo.Controller.ProjectController.projectionList(ProjectController.java:117) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_112]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_112]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_112]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_112]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:114) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+
+2018-01-07 21:50:54.067  INFO 3549 --- [Thread-5] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@58afc79c: startup date [Sun Jan 07 21:49:39 CST 2018]; root of context hierarchy
+2018-01-07 21:50:54.070  INFO 3549 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-07 21:50:54.854  INFO 3549 --- [restartedMain] com.tcs.Repo.App                         : Starting App on Suriyaprakashs-MacBook-Air.local with PID 3549 (/Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs/target/classes started by suriyaprakashselvaraj in /Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs)
+2018-01-07 21:50:54.854  INFO 3549 --- [restartedMain] com.tcs.Repo.App                         : No active profile set, falling back to default profiles: default
+2018-01-07 21:50:54.858  INFO 3549 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@71c6d695: startup date [Sun Jan 07 21:50:54 CST 2018]; root of context hierarchy
+2018-01-07 21:50:55.391  INFO 3549 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bba1ee21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-07 21:50:55.465  INFO 3549 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-07 21:50:55.466  INFO 3549 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-01-07 21:50:55.466  INFO 3549 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-01-07 21:50:55.478  INFO 3549 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-07 21:50:55.480  INFO 3549 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 622 ms
+2018-01-07 21:50:55.586  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-07 21:50:55.587  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-07 21:50:55.588  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-07 21:50:55.588  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-07 21:50:55.589  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-07 21:50:55.939  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@71c6d695: startup date [Sun Jan 07 21:50:54 CST 2018]; root of context hierarchy
+2018-01-07 21:50:55.952  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.tcs.Repo.Controller.HomeController.home()
+2018-01-07 21:50:55.962  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/{id}],methods=[DELETE]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.ProjectController.delete(int)
+2018-01-07 21:50:55.963  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:50:55.963  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[POST]}" onto public com.tcs.Repo.model.MasterVO com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:50:55.964  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.MasterVO> com.tcs.Repo.Controller.ProjectController.masterList()
+2018-01-07 21:50:55.965  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/import],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.importcreate(java.util.List<com.tcs.Repo.model.ImportVO>)
+2018-01-07 21:50:55.965  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateuser(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:50:55.965  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.ProjectionVO> com.tcs.Repo.Controller.ProjectController.projectionList()
+2018-01-07 21:50:55.965  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateprojection(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:50:55.966  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users/{id}],methods=[GET]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.get(java.lang.String)
+2018-01-07 21:50:55.967  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users],methods=[POST]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.create(com.tcs.Repo.model.UserVO)
+2018-01-07 21:50:55.970  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-07 21:50:55.971  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-07 21:50:55.977  INFO 3549 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [public/index.html]
+2018-01-07 21:50:55.983  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-07 21:50:55.990  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:50:55.991  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:50:56.016  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:50:56.125  INFO 3549 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-07 21:50:56.215  INFO 3549 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-07 21:50:56.243  INFO 3549 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-07 21:50:56.247  INFO 3549 --- [restartedMain] com.tcs.Repo.App                         : Started App in 1.679 seconds (JVM running for 77.636)
+2018-01-07 21:51:19.893  INFO 3549 --- [Thread-10] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@71c6d695: startup date [Sun Jan 07 21:50:54 CST 2018]; root of context hierarchy
+2018-01-07 21:51:19.897  INFO 3549 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-07 21:51:20.264  INFO 3549 --- [restartedMain] com.tcs.Repo.App                         : Starting App on Suriyaprakashs-MacBook-Air.local with PID 3549 (/Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs/target/classes started by suriyaprakashselvaraj in /Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs)
+2018-01-07 21:51:20.264  INFO 3549 --- [restartedMain] com.tcs.Repo.App                         : No active profile set, falling back to default profiles: default
+2018-01-07 21:51:20.268  INFO 3549 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77c56e6b: startup date [Sun Jan 07 21:51:20 CST 2018]; root of context hierarchy
+2018-01-07 21:51:20.804  INFO 3549 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bba1ee21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-07 21:51:20.886  INFO 3549 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-07 21:51:20.887  INFO 3549 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-01-07 21:51:20.887  INFO 3549 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-01-07 21:51:20.894  INFO 3549 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-07 21:51:20.895  INFO 3549 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 628 ms
+2018-01-07 21:51:20.937  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-07 21:51:20.938  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-07 21:51:20.938  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-07 21:51:20.939  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-07 21:51:20.939  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-07 21:51:21.215  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77c56e6b: startup date [Sun Jan 07 21:51:20 CST 2018]; root of context hierarchy
+2018-01-07 21:51:21.224  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.tcs.Repo.Controller.HomeController.home()
+2018-01-07 21:51:21.230  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/{id}],methods=[DELETE]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.ProjectController.delete(int)
+2018-01-07 21:51:21.231  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:51:21.231  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[POST]}" onto public com.tcs.Repo.model.MasterVO com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:51:21.231  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.MasterVO> com.tcs.Repo.Controller.ProjectController.masterList()
+2018-01-07 21:51:21.233  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/import],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.importcreate(java.util.List<com.tcs.Repo.model.ImportVO>)
+2018-01-07 21:51:21.233  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateuser(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:51:21.234  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.ProjectionVO> com.tcs.Repo.Controller.ProjectController.projectionList()
+2018-01-07 21:51:21.235  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateprojection(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:51:21.236  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users/{id}],methods=[GET]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.get(java.lang.String)
+2018-01-07 21:51:21.236  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users],methods=[POST]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.create(com.tcs.Repo.model.UserVO)
+2018-01-07 21:51:21.238  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-07 21:51:21.238  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-07 21:51:21.242  INFO 3549 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [public/index.html]
+2018-01-07 21:51:21.245  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-07 21:51:21.250  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:51:21.251  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:51:21.271  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:51:21.334  INFO 3549 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-07 21:51:21.407  INFO 3549 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-07 21:51:21.418  INFO 3549 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-07 21:51:21.421  INFO 3549 --- [restartedMain] com.tcs.Repo.App                         : Started App in 1.221 seconds (JVM running for 102.81)
+2018-01-07 21:51:31.900  INFO 3549 --- [Thread-15] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77c56e6b: startup date [Sun Jan 07 21:51:20 CST 2018]; root of context hierarchy
+2018-01-07 21:51:31.902  INFO 3549 --- [Thread-15] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-07 21:51:32.188  INFO 3549 --- [restartedMain] com.tcs.Repo.App                         : Starting App on Suriyaprakashs-MacBook-Air.local with PID 3549 (/Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs/target/classes started by suriyaprakashselvaraj in /Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs)
+2018-01-07 21:51:32.189  INFO 3549 --- [restartedMain] com.tcs.Repo.App                         : No active profile set, falling back to default profiles: default
+2018-01-07 21:51:32.193  INFO 3549 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f563792: startup date [Sun Jan 07 21:51:32 CST 2018]; root of context hierarchy
+2018-01-07 21:51:32.744  INFO 3549 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bba1ee21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-07 21:51:32.820  INFO 3549 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-07 21:51:32.821  INFO 3549 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-01-07 21:51:32.821  INFO 3549 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-01-07 21:51:32.828  INFO 3549 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-07 21:51:32.829  INFO 3549 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 637 ms
+2018-01-07 21:51:32.873  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-07 21:51:32.874  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-07 21:51:32.875  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-07 21:51:32.875  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-07 21:51:32.875  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-07 21:51:33.125  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f563792: startup date [Sun Jan 07 21:51:32 CST 2018]; root of context hierarchy
+2018-01-07 21:51:33.134  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.tcs.Repo.Controller.HomeController.home()
+2018-01-07 21:51:33.140  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/{id}],methods=[DELETE]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.ProjectController.delete(int)
+2018-01-07 21:51:33.140  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:51:33.140  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[POST]}" onto public com.tcs.Repo.model.MasterVO com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:51:33.141  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.MasterVO> com.tcs.Repo.Controller.ProjectController.masterList()
+2018-01-07 21:51:33.141  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/import],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.importcreate(java.util.List<com.tcs.Repo.model.ImportVO>)
+2018-01-07 21:51:33.141  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateuser(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:51:33.141  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.ProjectionVO> com.tcs.Repo.Controller.ProjectController.projectionList()
+2018-01-07 21:51:33.142  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateprojection(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:51:33.142  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users/{id}],methods=[GET]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.get(java.lang.String)
+2018-01-07 21:51:33.143  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users],methods=[POST]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.create(com.tcs.Repo.model.UserVO)
+2018-01-07 21:51:33.144  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-07 21:51:33.145  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-07 21:51:33.149  INFO 3549 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [public/index.html]
+2018-01-07 21:51:33.152  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-07 21:51:33.157  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:51:33.157  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:51:33.177  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:51:33.226  INFO 3549 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-07 21:51:33.296  INFO 3549 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-07 21:51:33.308  INFO 3549 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-07 21:51:33.313  INFO 3549 --- [restartedMain] com.tcs.Repo.App                         : Started App in 1.179 seconds (JVM running for 114.698)
+2018-01-07 21:51:37.689  INFO 3549 --- [Thread-20] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f563792: startup date [Sun Jan 07 21:51:32 CST 2018]; root of context hierarchy
+2018-01-07 21:51:37.691  INFO 3549 --- [Thread-20] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-07 21:51:37.909  INFO 3549 --- [restartedMain] com.tcs.Repo.App                         : Starting App on Suriyaprakashs-MacBook-Air.local with PID 3549 (/Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs/target/classes started by suriyaprakashselvaraj in /Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs)
+2018-01-07 21:51:37.910  INFO 3549 --- [restartedMain] com.tcs.Repo.App                         : No active profile set, falling back to default profiles: default
+2018-01-07 21:51:37.913  INFO 3549 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6922499a: startup date [Sun Jan 07 21:51:37 CST 2018]; root of context hierarchy
+2018-01-07 21:51:38.495  INFO 3549 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bba1ee21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-07 21:51:38.561  INFO 3549 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-07 21:51:38.562  INFO 3549 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-01-07 21:51:38.563  INFO 3549 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-01-07 21:51:38.571  INFO 3549 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-07 21:51:38.572  INFO 3549 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 659 ms
+2018-01-07 21:51:38.618  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-07 21:51:38.619  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-07 21:51:38.619  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-07 21:51:38.620  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-07 21:51:38.620  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-07 21:51:38.849  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6922499a: startup date [Sun Jan 07 21:51:37 CST 2018]; root of context hierarchy
+2018-01-07 21:51:38.857  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.tcs.Repo.Controller.HomeController.home()
+2018-01-07 21:51:38.860  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/{id}],methods=[DELETE]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.ProjectController.delete(int)
+2018-01-07 21:51:38.860  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:51:38.861  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[POST]}" onto public com.tcs.Repo.model.MasterVO com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:51:38.861  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.MasterVO> com.tcs.Repo.Controller.ProjectController.masterList()
+2018-01-07 21:51:38.861  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/import],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.importcreate(java.util.List<com.tcs.Repo.model.ImportVO>)
+2018-01-07 21:51:38.862  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateuser(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:51:38.862  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.ProjectionVO> com.tcs.Repo.Controller.ProjectController.projectionList()
+2018-01-07 21:51:38.862  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateprojection(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:51:38.863  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users/{id}],methods=[GET]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.get(java.lang.String)
+2018-01-07 21:51:38.864  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users],methods=[POST]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.create(com.tcs.Repo.model.UserVO)
+2018-01-07 21:51:38.867  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-07 21:51:38.867  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-07 21:51:38.872  INFO 3549 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [public/index.html]
+2018-01-07 21:51:38.875  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-07 21:51:38.880  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:51:38.880  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:51:38.895  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:51:38.941  INFO 3549 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-07 21:51:39.010  INFO 3549 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-07 21:51:39.020  INFO 3549 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-07 21:51:39.023  INFO 3549 --- [restartedMain] com.tcs.Repo.App                         : Started App in 1.157 seconds (JVM running for 120.411)
+2018-01-07 21:51:49.508  INFO 3549 --- [Thread-25] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6922499a: startup date [Sun Jan 07 21:51:37 CST 2018]; root of context hierarchy
+2018-01-07 21:51:49.510  INFO 3549 --- [Thread-25] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-07 21:51:49.720  INFO 3549 --- [restartedMain] com.tcs.Repo.App                         : Starting App on Suriyaprakashs-MacBook-Air.local with PID 3549 (/Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs/target/classes started by suriyaprakashselvaraj in /Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs)
+2018-01-07 21:51:49.720  INFO 3549 --- [restartedMain] com.tcs.Repo.App                         : No active profile set, falling back to default profiles: default
+2018-01-07 21:51:49.723  INFO 3549 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4e19aab0: startup date [Sun Jan 07 21:51:49 CST 2018]; root of context hierarchy
+2018-01-07 21:51:50.193  INFO 3549 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bba1ee21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-07 21:51:50.256  INFO 3549 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-07 21:51:50.256  INFO 3549 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-01-07 21:51:50.258  INFO 3549 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-01-07 21:51:50.265  INFO 3549 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-07 21:51:50.266  INFO 3549 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 543 ms
+2018-01-07 21:51:50.306  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-07 21:51:50.306  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-07 21:51:50.307  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-07 21:51:50.307  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-07 21:51:50.307  INFO 3549 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-07 21:51:50.523  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4e19aab0: startup date [Sun Jan 07 21:51:49 CST 2018]; root of context hierarchy
+2018-01-07 21:51:50.529  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.tcs.Repo.Controller.HomeController.home()
+2018-01-07 21:51:50.532  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/{id}],methods=[DELETE]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.ProjectController.delete(int)
+2018-01-07 21:51:50.532  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:51:50.532  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[POST]}" onto public com.tcs.Repo.model.MasterVO com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:51:50.533  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.MasterVO> com.tcs.Repo.Controller.ProjectController.masterList()
+2018-01-07 21:51:50.533  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/import],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.importcreate(java.util.List<com.tcs.Repo.model.ImportVO>)
+2018-01-07 21:51:50.533  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateuser(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:51:50.533  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.ProjectionVO> com.tcs.Repo.Controller.ProjectController.projectionList()
+2018-01-07 21:51:50.534  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateprojection(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:51:50.534  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users/{id}],methods=[GET]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.get(java.lang.String)
+2018-01-07 21:51:50.535  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users],methods=[POST]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.create(com.tcs.Repo.model.UserVO)
+2018-01-07 21:51:50.536  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-07 21:51:50.537  INFO 3549 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-07 21:51:50.539  INFO 3549 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [public/index.html]
+2018-01-07 21:51:50.542  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-07 21:51:50.545  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:51:50.545  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:51:50.559  INFO 3549 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:51:50.600  INFO 3549 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-07 21:51:50.680  INFO 3549 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-07 21:51:50.691  INFO 3549 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-07 21:51:50.693  INFO 3549 --- [restartedMain] com.tcs.Repo.App                         : Started App in 1.025 seconds (JVM running for 132.081)
+2018-01-07 21:54:07.748  INFO 3549 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-07 21:54:07.748  INFO 3549 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-07 21:54:07.755  INFO 3549 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 7 ms
+2018-01-07 21:54:10.160 DEBUG 3549 --- [http-nio-8080-exec-1] c.t.R.mapper.QueryMapper.getmasterdata   : ==>  Preparing: select * from master_data order by rec_key 
+2018-01-07 21:54:10.160 DEBUG 3549 --- [http-nio-8080-exec-1] c.t.R.mapper.QueryMapper.getmasterdata   : ==> Parameters: 
+2018-01-07 21:54:10.199 DEBUG 3549 --- [http-nio-8080-exec-1] c.t.R.mapper.QueryMapper.getmasterdata   : <==      Total: 324
+2018-01-07 21:54:12.713 DEBUG 3549 --- [http-nio-8080-exec-2] c.t.R.m.QueryMapper.getProjectionData    : ==>  Preparing: select * from projections order by rec_key 
+2018-01-07 21:54:12.715 DEBUG 3549 --- [http-nio-8080-exec-2] c.t.R.m.QueryMapper.getProjectionData    : ==> Parameters: 
+2018-01-07 21:54:12.725 DEBUG 3549 --- [http-nio-8080-exec-2] c.t.R.m.QueryMapper.getProjectionData    : <==      Total: 12
+2018-01-07 21:54:35.741  INFO 3549 --- [Thread-34] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4e19aab0: startup date [Sun Jan 07 21:51:49 CST 2018]; root of context hierarchy
+2018-01-07 21:54:35.744  INFO 3549 --- [Thread-34] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-07 21:55:26.503  INFO 3586 --- [restartedMain] com.tcs.Repo.App                         : Starting App on Suriyaprakashs-MacBook-Air.local with PID 3586 (/Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs/target/classes started by suriyaprakashselvaraj in /Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs)
+2018-01-07 21:55:26.508  INFO 3586 --- [restartedMain] com.tcs.Repo.App                         : No active profile set, falling back to default profiles: default
+2018-01-07 21:55:26.691  INFO 3586 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b61e21a: startup date [Sun Jan 07 21:55:26 CST 2018]; root of context hierarchy
+2018-01-07 21:55:28.790  INFO 3586 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8dd152d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-07 21:55:29.573  INFO 3586 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-07 21:55:29.595  INFO 3586 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-01-07 21:55:29.597  INFO 3586 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-01-07 21:55:29.735  INFO 3586 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-07 21:55:29.736  INFO 3586 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3050 ms
+2018-01-07 21:55:30.025  INFO 3586 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-07 21:55:30.030  INFO 3586 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-07 21:55:30.031  INFO 3586 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-07 21:55:30.031  INFO 3586 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-07 21:55:30.032  INFO 3586 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-07 21:55:31.360  INFO 3586 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b61e21a: startup date [Sun Jan 07 21:55:26 CST 2018]; root of context hierarchy
+2018-01-07 21:55:31.598  INFO 3586 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.tcs.Repo.Controller.HomeController.home()
+2018-01-07 21:55:31.608  INFO 3586 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/{id}],methods=[DELETE]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.ProjectController.delete(int)
+2018-01-07 21:55:31.609  INFO 3586 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:55:31.610  INFO 3586 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[POST]}" onto public com.tcs.Repo.model.MasterVO com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:55:31.611  INFO 3586 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.MasterVO> com.tcs.Repo.Controller.ProjectController.masterList()
+2018-01-07 21:55:31.611  INFO 3586 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/import],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.importcreate(java.util.List<com.tcs.Repo.model.ImportVO>)
+2018-01-07 21:55:31.618  INFO 3586 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateuser(com.tcs.Repo.model.MasterVO)
+2018-01-07 21:55:31.618  INFO 3586 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.ProjectionVO> com.tcs.Repo.Controller.ProjectController.projectionList()
+2018-01-07 21:55:31.620  INFO 3586 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateprojection(com.tcs.Repo.model.ProjectionVO)
+2018-01-07 21:55:31.622  INFO 3586 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users/{id}],methods=[GET]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.get(java.lang.String)
+2018-01-07 21:55:31.622  INFO 3586 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users],methods=[POST]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.create(com.tcs.Repo.model.UserVO)
+2018-01-07 21:55:31.626  INFO 3586 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-07 21:55:31.627  INFO 3586 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-07 21:55:31.634  INFO 3586 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [public/index.html]
+2018-01-07 21:55:31.663  INFO 3586 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-07 21:55:31.684  INFO 3586 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:55:31.684  INFO 3586 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:55:31.753  INFO 3586 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-07 21:55:32.096  INFO 3586 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-07 21:55:32.259  INFO 3586 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-07 21:55:32.438  INFO 3586 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-07 21:55:32.454  INFO 3586 --- [restartedMain] com.tcs.Repo.App                         : Started App in 6.704 seconds (JVM running for 7.347)
+2018-01-07 21:55:37.373  INFO 3586 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-07 21:55:37.374  INFO 3586 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-07 21:55:37.403  INFO 3586 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-01-07 21:55:40.479 DEBUG 3586 --- [http-nio-8080-exec-1] c.t.R.m.QueryMapper.getProjectionData    : ==>  Preparing: select * from projections order by rec_key 
+2018-01-07 21:55:40.504 DEBUG 3586 --- [http-nio-8080-exec-1] c.t.R.m.QueryMapper.getProjectionData    : ==> Parameters: 
+2018-01-07 21:55:40.544 DEBUG 3586 --- [http-nio-8080-exec-1] c.t.R.m.QueryMapper.getProjectionData    : <==      Total: 12
+2018-01-07 21:55:46.052 DEBUG 3586 --- [http-nio-8080-exec-2] c.t.R.mapper.QueryMapper.getmasterdata   : ==>  Preparing: select * from master_data order by rec_key 
+2018-01-07 21:55:46.054 DEBUG 3586 --- [http-nio-8080-exec-2] c.t.R.mapper.QueryMapper.getmasterdata   : ==> Parameters: 
+2018-01-07 21:55:46.175 DEBUG 3586 --- [http-nio-8080-exec-2] c.t.R.mapper.QueryMapper.getmasterdata   : <==      Total: 324
+2018-01-07 21:55:49.505 DEBUG 3586 --- [http-nio-8080-exec-3] c.t.R.m.QueryMapper.getProjectionData    : ==>  Preparing: select * from projections order by rec_key 
+2018-01-07 21:55:49.506 DEBUG 3586 --- [http-nio-8080-exec-3] c.t.R.m.QueryMapper.getProjectionData    : ==> Parameters: 
+2018-01-07 21:55:49.516 DEBUG 3586 --- [http-nio-8080-exec-3] c.t.R.m.QueryMapper.getProjectionData    : <==      Total: 12
+2018-01-07 21:55:54.574 DEBUG 3586 --- [http-nio-8080-exec-4] c.t.R.mapper.QueryMapper.getmasterdata   : ==>  Preparing: select * from master_data order by rec_key 
+2018-01-07 21:55:54.575 DEBUG 3586 --- [http-nio-8080-exec-4] c.t.R.mapper.QueryMapper.getmasterdata   : ==> Parameters: 
+2018-01-07 21:55:54.627 DEBUG 3586 --- [http-nio-8080-exec-4] c.t.R.mapper.QueryMapper.getmasterdata   : <==      Total: 324
+2018-01-07 21:55:58.076 DEBUG 3586 --- [http-nio-8080-exec-6] c.t.R.mapper.QueryMapper.getmasterdata   : ==>  Preparing: select * from master_data order by rec_key 
+2018-01-07 21:55:58.077 DEBUG 3586 --- [http-nio-8080-exec-6] c.t.R.mapper.QueryMapper.getmasterdata   : ==> Parameters: 
+2018-01-07 21:55:58.110 DEBUG 3586 --- [http-nio-8080-exec-6] c.t.R.mapper.QueryMapper.getmasterdata   : <==      Total: 324
+2018-01-07 21:56:02.215 DEBUG 3586 --- [http-nio-8080-exec-7] c.t.R.mapper.QueryMapper.getmasterdata   : ==>  Preparing: select * from master_data order by rec_key 
+2018-01-07 21:56:02.215 DEBUG 3586 --- [http-nio-8080-exec-7] c.t.R.mapper.QueryMapper.getmasterdata   : ==> Parameters: 
+2018-01-07 21:56:02.234 DEBUG 3586 --- [http-nio-8080-exec-7] c.t.R.mapper.QueryMapper.getmasterdata   : <==      Total: 324
+2018-01-07 21:56:27.562  INFO 3586 --- [Thread-8] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b61e21a: startup date [Sun Jan 07 21:55:26 CST 2018]; root of context hierarchy
+2018-01-07 21:56:27.565  INFO 3586 --- [Thread-8] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-08 21:42:01.154  INFO 3928 --- [restartedMain] com.tcs.Repo.App                         : Starting App on Suriyaprakashs-MacBook-Air.local with PID 3928 (/Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs/target/classes started by suriyaprakashselvaraj in /Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs)
+2018-01-08 21:42:01.159  INFO 3928 --- [restartedMain] com.tcs.Repo.App                         : No active profile set, falling back to default profiles: default
+2018-01-08 21:42:01.374  INFO 3928 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66feb6aa: startup date [Mon Jan 08 21:42:01 CST 2018]; root of context hierarchy
+2018-01-08 21:42:04.186  INFO 3928 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cd6602e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-08 21:42:05.398  INFO 3928 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-08 21:42:05.478  INFO 3928 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-01-08 21:42:05.482  INFO 3928 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-01-08 21:42:05.735  INFO 3928 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-08 21:42:05.736  INFO 3928 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4373 ms
+2018-01-08 21:42:06.074  INFO 3928 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-08 21:42:06.085  INFO 3928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-08 21:42:06.086  INFO 3928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-08 21:42:06.087  INFO 3928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-08 21:42:06.087  INFO 3928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-08 21:42:08.081  INFO 3928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66feb6aa: startup date [Mon Jan 08 21:42:01 CST 2018]; root of context hierarchy
+2018-01-08 21:42:08.262  INFO 3928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.tcs.Repo.Controller.HomeController.home()
+2018-01-08 21:42:08.274  INFO 3928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/{id}],methods=[DELETE]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.ProjectController.delete(int)
+2018-01-08 21:42:08.274  INFO 3928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.ProjectionVO)
+2018-01-08 21:42:08.275  INFO 3928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[POST]}" onto public com.tcs.Repo.model.MasterVO com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.MasterVO)
+2018-01-08 21:42:08.276  INFO 3928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.MasterVO> com.tcs.Repo.Controller.ProjectController.masterList()
+2018-01-08 21:42:08.277  INFO 3928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/import],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.importcreate(java.util.List<com.tcs.Repo.model.ImportVO>)
+2018-01-08 21:42:08.278  INFO 3928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateuser(com.tcs.Repo.model.MasterVO)
+2018-01-08 21:42:08.279  INFO 3928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.ProjectionVO> com.tcs.Repo.Controller.ProjectController.projectionList()
+2018-01-08 21:42:08.279  INFO 3928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateprojection(com.tcs.Repo.model.ProjectionVO)
+2018-01-08 21:42:08.280  INFO 3928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users/{id}],methods=[GET]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.get(java.lang.String)
+2018-01-08 21:42:08.281  INFO 3928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users],methods=[POST]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.create(com.tcs.Repo.model.UserVO)
+2018-01-08 21:42:08.284  INFO 3928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-08 21:42:08.285  INFO 3928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-08 21:42:08.291  INFO 3928 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [public/index.html]
+2018-01-08 21:42:08.309  INFO 3928 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-08 21:42:08.351  INFO 3928 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-08 21:42:08.352  INFO 3928 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-08 21:42:08.449  INFO 3928 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-08 21:42:08.885  INFO 3928 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-08 21:42:09.010  INFO 3928 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-08 21:42:09.199  INFO 3928 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-08 21:42:09.213  INFO 3928 --- [restartedMain] com.tcs.Repo.App                         : Started App in 9.389 seconds (JVM running for 10.707)
+2018-01-08 21:42:13.301  INFO 3928 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-08 21:42:13.302  INFO 3928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-08 21:42:13.341  INFO 3928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+2018-01-08 21:49:09.494 DEBUG 3928 --- [http-nio-8080-exec-9] c.t.R.mapper.QueryMapper.getuserprofile  : ==>  Preparing: select username as username,password as password,role as role,fname as fname,lname as lname from repouser where username=? 
+2018-01-08 21:49:09.520 DEBUG 3928 --- [http-nio-8080-exec-9] c.t.R.mapper.QueryMapper.getuserprofile  : ==> Parameters: surya@test.com(String)
+2018-01-08 21:49:09.554 DEBUG 3928 --- [http-nio-8080-exec-9] c.t.R.mapper.QueryMapper.getuserprofile  : <==      Total: 1
+2018-01-08 21:49:09.777 DEBUG 3928 --- [http-nio-8080-exec-5] c.t.R.mapper.QueryMapper.getmasterdata   : ==>  Preparing: select * from master_data order by rec_key 
+2018-01-08 21:49:09.778 DEBUG 3928 --- [http-nio-8080-exec-5] c.t.R.mapper.QueryMapper.getmasterdata   : ==> Parameters: 
+2018-01-08 21:49:10.024 DEBUG 3928 --- [http-nio-8080-exec-5] c.t.R.mapper.QueryMapper.getmasterdata   : <==      Total: 324
+2018-01-08 21:49:19.120 DEBUG 3928 --- [http-nio-8080-exec-4] c.t.R.m.QueryMapper.getProjectionData    : ==>  Preparing: select * from projections order by rec_key 
+2018-01-08 21:49:19.121 DEBUG 3928 --- [http-nio-8080-exec-4] c.t.R.m.QueryMapper.getProjectionData    : ==> Parameters: 
+2018-01-08 21:49:19.126 DEBUG 3928 --- [http-nio-8080-exec-4] c.t.R.m.QueryMapper.getProjectionData    : <==      Total: 12
+2018-01-08 21:51:12.868  INFO 3928 --- [Thread-8] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66feb6aa: startup date [Mon Jan 08 21:42:01 CST 2018]; root of context hierarchy
+2018-01-08 21:51:12.874  INFO 3928 --- [Thread-8] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-08 21:54:52.576  INFO 3992 --- [restartedMain] com.tcs.Repo.App                         : Starting App on Suriyaprakashs-MacBook-Air.local with PID 3992 (/Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs/target/classes started by suriyaprakashselvaraj in /Users/suriyaprakashselvaraj/Documents/Surya/RepoTcs)
+2018-01-08 21:54:52.582  INFO 3992 --- [restartedMain] com.tcs.Repo.App                         : No active profile set, falling back to default profiles: default
+2018-01-08 21:54:52.742  INFO 3992 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@42a8e3b4: startup date [Mon Jan 08 21:54:52 CST 2018]; root of context hierarchy
+2018-01-08 21:54:55.136  INFO 3992 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4811f12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-01-08 21:54:56.082  INFO 3992 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-08 21:54:56.111  INFO 3992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-01-08 21:54:56.113  INFO 3992 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-01-08 21:54:56.255  INFO 3992 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-08 21:54:56.256  INFO 3992 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3518 ms
+2018-01-08 21:54:56.533  INFO 3992 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-08 21:54:56.548  INFO 3992 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-08 21:54:56.549  INFO 3992 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-08 21:54:56.550  INFO 3992 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-08 21:54:56.551  INFO 3992 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-08 21:54:57.838  INFO 3992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@42a8e3b4: startup date [Mon Jan 08 21:54:52 CST 2018]; root of context hierarchy
+2018-01-08 21:54:57.942  INFO 3992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.tcs.Repo.Controller.HomeController.home()
+2018-01-08 21:54:57.951  INFO 3992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/{id}],methods=[DELETE]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.ProjectController.delete(int)
+2018-01-08 21:54:57.952  INFO 3992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.ProjectionVO)
+2018-01-08 21:54:57.954  INFO 3992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[POST]}" onto public com.tcs.Repo.model.MasterVO com.tcs.Repo.Controller.ProjectController.create(com.tcs.Repo.model.MasterVO)
+2018-01-08 21:54:57.954  INFO 3992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.MasterVO> com.tcs.Repo.Controller.ProjectController.masterList()
+2018-01-08 21:54:57.955  INFO 3992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects/import],methods=[POST]}" onto public void com.tcs.Repo.Controller.ProjectController.importcreate(java.util.List<com.tcs.Repo.model.ImportVO>)
+2018-01-08 21:54:57.956  INFO 3992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projects],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateuser(com.tcs.Repo.model.MasterVO)
+2018-01-08 21:54:57.956  INFO 3992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[GET]}" onto public java.util.List<com.tcs.Repo.model.ProjectionVO> com.tcs.Repo.Controller.ProjectController.projectionList()
+2018-01-08 21:54:57.957  INFO 3992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/projection],methods=[PUT]}" onto public void com.tcs.Repo.Controller.ProjectController.updateprojection(com.tcs.Repo.model.ProjectionVO)
+2018-01-08 21:54:57.959  INFO 3992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users/{id}],methods=[GET]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.get(java.lang.String)
+2018-01-08 21:54:57.960  INFO 3992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/users],methods=[POST]}" onto public com.tcs.Repo.model.UserVO com.tcs.Repo.Controller.UserController.create(com.tcs.Repo.model.UserVO)
+2018-01-08 21:54:57.966  INFO 3992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-08 21:54:57.967  INFO 3992 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-08 21:54:57.977  INFO 3992 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [public/index.html]
+2018-01-08 21:54:58.000  INFO 3992 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-08 21:54:58.024  INFO 3992 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-08 21:54:58.025  INFO 3992 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-08 21:54:58.099  INFO 3992 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-08 21:54:58.412  INFO 3992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-08 21:54:58.509  INFO 3992 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-08 21:54:58.652  INFO 3992 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-08 21:54:58.661  INFO 3992 --- [restartedMain] com.tcs.Repo.App                         : Started App in 7.002 seconds (JVM running for 7.636)
+2018-01-08 21:55:46.284  INFO 3992 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-08 21:55:46.284  INFO 3992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-08 21:55:46.305  INFO 3992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-01-08 21:55:53.925 DEBUG 3992 --- [http-nio-8080-exec-5] c.t.R.mapper.QueryMapper.getuserprofile  : ==>  Preparing: select username as username,password as password,role as role,fname as fname,lname as lname from repouser where username=? 
+2018-01-08 21:55:53.947 DEBUG 3992 --- [http-nio-8080-exec-5] c.t.R.mapper.QueryMapper.getuserprofile  : ==> Parameters: surya@test.com(String)
+2018-01-08 21:55:53.971 DEBUG 3992 --- [http-nio-8080-exec-5] c.t.R.mapper.QueryMapper.getuserprofile  : <==      Total: 1
+2018-01-08 21:56:03.191 DEBUG 3992 --- [http-nio-8080-exec-10] c.t.R.mapper.QueryMapper.getmasterdata   : ==>  Preparing: select * from master_data order by rec_key 
+2018-01-08 21:56:03.194 DEBUG 3992 --- [http-nio-8080-exec-10] c.t.R.mapper.QueryMapper.getmasterdata   : ==> Parameters: 
+2018-01-08 21:56:03.366 DEBUG 3992 --- [http-nio-8080-exec-10] c.t.R.mapper.QueryMapper.getmasterdata   : <==      Total: 324
+2018-01-08 21:56:05.012 DEBUG 3992 --- [http-nio-8080-exec-8] c.t.R.m.QueryMapper.getProjectionData    : ==>  Preparing: select * from projections order by rec_key 
+2018-01-08 21:56:05.013 DEBUG 3992 --- [http-nio-8080-exec-8] c.t.R.m.QueryMapper.getProjectionData    : ==> Parameters: 
+2018-01-08 21:56:05.018 DEBUG 3992 --- [http-nio-8080-exec-8] c.t.R.m.QueryMapper.getProjectionData    : <==      Total: 12

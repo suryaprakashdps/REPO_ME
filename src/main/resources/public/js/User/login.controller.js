@@ -16,10 +16,7 @@
             // reset login status
             AuthenticationService.ClearCredentials();
         	$rootScope.pages = [
-    			{
-    				name: 'Home',
-    				url: '#/'
-    			},
+    			
     			{
     				name: 'Login',
     				url: '#/login'
@@ -39,7 +36,7 @@
                     AuthenticationService.SetCredentials(vm.username, vm.password);
                     
                    
-                    $location.path('/projects');
+                    $location.path('/');
                 } else {
                     FlashService.Error(response.message);
                     vm.dataLoading = false;

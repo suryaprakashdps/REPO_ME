@@ -160,10 +160,7 @@
     	
     	
 		$rootScope.pages = [
-			{
-				name: 'Home',
-				url: '#/'
-			},
+		
 			{
 				name: 'Login',
 				url: '#/login'
