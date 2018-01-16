@@ -141,7 +141,7 @@
 </insert>
 	
 	<select id="getProjectionData" resultType="com.tcs.Repo.model.ProjectionVO">
-		select * from projections order by rec_key
+		select * from projections order by rec_key,month
 
 	</select>
 	
