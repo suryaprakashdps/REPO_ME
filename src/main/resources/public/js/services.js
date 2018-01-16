@@ -31,6 +31,18 @@ angular.module('app.services', []).factory('DBService', function($resource) {
 	
 	}])
 	
+	.service('exportService',['$http',function($http){
+	
+	this.exportservice = function exportservice(data) {
+	    return $http({
+	        method : 'GET',
+	        url : '/api/v1/export.xls',
+	        	
+	    })
+	}
+	
+	}])
+	
 	.service('modelService',[function(){
 		
 		var entity={};

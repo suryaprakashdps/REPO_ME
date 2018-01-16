@@ -260,6 +260,24 @@ angular
 					
 		
 				})
+				.controller('ExportController',
+				function($scope,$state, $stateParams, exportService) {
+					exportService.exportservice()
+					
+				
+				      .then(function successCallback(response) {
+				    	  
+				    	   var blob = new Blob([response], {type: "application/vnd.ms-excel"});
+				    	   
+				    	    var objectUrl = URL.createObjectURL(blob);
+				    	    console.log(blob);
+				    	    window.open(objectUrl);
+				    	  $scope.success_message="That's Quick !! Successfully Exported Data";
+				    	  $scope.showSuccessAlert = true;
+				    	  $state.go('projection');
+				    	  
+				      });
+				})
 				
 				
 				.controller('EditProjectionController',

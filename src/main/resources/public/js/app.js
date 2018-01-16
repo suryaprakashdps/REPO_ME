@@ -102,6 +102,13 @@
              controllerAs: 'vm'
              
          })
+         .state('export', {
+             url:'/projections',
+	    	 controller: 'ExportController',
+           //  templateUrl: viewsPrefix +'login.view.html',
+             controllerAs: 'vm'
+            
+         })
 	    .state('addproj',{
 	        url:'/projects/new',
 	        templateUrl: viewsPrefix + 'Proj-add.html',

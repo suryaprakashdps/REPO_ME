@@ -23,41 +23,45 @@ public class ExportController {
 	@Autowired
 	private UserService userService;
 	
+	
+	
 	@RequestMapping(value = "export", method = RequestMethod.GET)
 	public String ExportList(Model model) {
 		
+		
+		
 List<ProjectionVO> master_data = userService.getProjectionData();
 		
-		String liststring=master_data.toString();
-		System.out.println(liststring);
+	
 		
-		List<ProjectionVO> uniqueprojectdata = new ArrayList<ProjectionVO>();
+		List<ProjectionVO> uniqueprojectiondata = new ArrayList<ProjectionVO>();
 		
 		
 		
 		Map<String, List<ProjectionVO> > map = new HashMap<>();
-		Set<ProjectionVO> unique = new TreeSet<ProjectionVO>(new ProjectionCompartor());
+		Set<ProjectionVO> uniqueSet = new TreeSet<ProjectionVO>(new ProjectionCompartor());
 		
 		
 		
 		//gets unique data
 		for (ProjectionVO projectvo : master_data) {
-			if (unique.add(projectvo)) {
-				uniqueprojectdata.add(projectvo);
+			if (uniqueSet.add(projectvo)) {
+				uniqueprojectiondata.add(projectvo);
 			}
 		}
 			
-			for (ProjectionVO uniquevo:uniqueprojectdata){
+			for (ProjectionVO uniquevo:uniqueprojectiondata){
 				List<ProjectionVO> finallist = new ArrayList<ProjectionVO>();
-				for (ProjectionVO testvo : master_data) {
+				for (ProjectionVO originalvo : master_data) {
 					ProjectionVO finalobj = new ProjectionVO();
-					if (testvo.getProject().equals(uniquevo.getProject())) {
+					if (originalvo.getProject().equals(uniquevo.getProject())) {
 						
-						finalobj.setTower(testvo.getTower());
+						finalobj.setTower(originalvo.getTower());
+						finalobj.setWon_number(originalvo.getWon_number());
 						
-						finalobj.setMonth(testvo.getMonth());
-						finalobj.setResource_count(testvo.getResource_count());
-						finalobj.setRevenue(testvo.getRevenue());
+						finalobj.setMonth(originalvo.getMonth());
+						finalobj.setResource_count(originalvo.getResource_count());
+						finalobj.setRevenue(originalvo.getRevenue());
 						finallist.add(finalobj);
 						
 					}
@@ -76,7 +80,7 @@ List<ProjectionVO> master_data = userService.getProjectionData();
 	          
 	            for(ProjectionVO results:values){
 	            	
-	            System.out.println("Values = " + results.getMonth());
+	            System.out.println("Values = " + results.getMonth()+results.getResource_count()+results.getTower()+results.getRevenue());
 	            }
 	        }
 			
