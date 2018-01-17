@@ -27,9 +27,11 @@ import com.tcs.Repo.model.ProjectionVO;
 
 public class ExcelView extends AbstractXlsView {
 
-	private static final String[] titles = { "Project", "Tower", "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG",
-			"SEP", "OCT", "NOV", "DEC" };
-	private static final String[] subtitles = { "RC", "Revenue"
+	private static final String[] titles = { "Project", "Tower", "ONSITE WON", "OFFSITE WON", "NEAR WON",
+			"OFF LOCATION", "SL1", "SL2", "DIGITAL OFFERING", "PROJECT TYPE", "ON RATE", "OFF RATE", "NS RATE", "JAN",
+			"FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC" };
+	private static final String[] subtitles = { "ON HC", "OFF HC", "NEAR HC", "TOTAL HC", "ON REV", "OFF REV",
+			"NEAR REV", "TOTAL REV"
 
 	};
 
@@ -38,12 +40,10 @@ public class ExcelView extends AbstractXlsView {
 			HttpServletResponse response) throws Exception {
 
 		// change the file name
-		response.setHeader("Content-Disposition", "attachment; filename=\"file.xls\"");
+		response.setHeader("Content-Disposition", "attachment; filename=\"ProjectionSheet.xls\"");
 
 		@SuppressWarnings("unchecked")
 		Map<String, List<ProjectionVO>> exportlist = (Map<String, List<ProjectionVO>>) model.get("exportList");
-
-	
 
 		Map<String, CellStyle> styles = createStyles(workbook);
 
@@ -68,28 +68,28 @@ public class ExcelView extends AbstractXlsView {
 		// header row
 		Row headerRow = sheet.createRow(1);
 		headerRow.setHeightInPoints(40);
-		int k = 2;
-		int j = 3;
+		int k = 13;
+		int j = 20;
 		int headercellinc = 0;
 		Cell headerCell;
 		for (int i = 0; i < titles.length; i++) {
 			headerCell = headerRow.createCell(headercellinc);
 			headerCell.setCellValue(titles[i]);
 			headerCell.setCellStyle(styles.get("header"));
-			if (i >1) {
-				
-				
-				++headercellinc;
-				System.out.println("inside if condition");
-				headerCell = headerRow.createCell(headercellinc);
-				headerCell.setCellValue(titles[i]);
-				headerCell.setCellStyle(styles.get("header"));
-				String ref = (char) ('A' + k) + "2:" + (char) ('A' + j) + "2";
-				sheet.addMergedRegion(CellRangeAddress.valueOf(ref));
-				j++;
-				j++;
-				k++;
-				k++;
+			if (i > 12) {
+
+				while (headercellinc < j) {
+
+					++headercellinc;
+					System.out.println("inside if condition");
+					headerCell = headerRow.createCell(headercellinc);
+					headerCell.setCellValue(titles[i]);
+					headerCell.setCellStyle(styles.get("header"));
+				}
+//				String ref = (char) ('A' + k) + "2:" + (char) ('A' + j) + "2";
+//				sheet.addMergedRegion(CellRangeAddress.valueOf(ref));
+				j = j + 8;
+				k = k + 8;
 			}
 
 			headercellinc++;
@@ -100,98 +100,46 @@ public class ExcelView extends AbstractXlsView {
 		Row subheaderRow = sheet.createRow(2);
 		subheaderRow.setHeightInPoints(40);
 		Cell subheaderCell;
-		int m = 2;
-		for (int i = 2; i < 14; i++) {
+		int m = 13;
+		for (int i = 0; i < 12; i++) {
 
-			for (int n = 0; n < subtitles.length; n++) {
+			for (int subtitleArray = 0; subtitleArray < subtitles.length; subtitleArray++) {
 				subheaderCell = subheaderRow.createCell(m);
-				subheaderCell.setCellValue(subtitles[n]);
+				subheaderCell.setCellValue(subtitles[subtitleArray]);
 				subheaderCell.setCellStyle(styles.get("header"));
 				m++;
 			}
 
 		}
 
-		//
-		// // create style for header cells
-		// CellStyle style = workbook.createCellStyle();
-		// Font font = workbook.createFont();
-		// font.setFontName("Arial");
-		// style.setFillForegroundColor(HSSFColor.BLUE.index);
-		// style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
-		// font.setBold(true);
-		// font.setColor(HSSFColor.WHITE.index);
-		// style.setFont(font);
-		//
-		//
-		// // create header row
-		// Row header = sheet.createRow(0);
-		// header.createCell(0).setCellValue("Project");
-		// header.getCell(0).setCellStyle(style);
-		// header.createCell(1).setCellValue("Tower");
-		// header.getCell(1).setCellStyle(style);
-		// header.createCell(2).setCellValue("Jan");
-		// header.getCell(2).setCellStyle(style);
-		// header.createCell(3).setCellValue("Feb");
-		// header.getCell(3).setCellStyle(style);
-		// header.createCell(4).setCellValue("Mar");
-		// header.getCell(4).setCellStyle(style);
-		// header.createCell(5).setCellValue("April");
-		// header.getCell(5).setCellStyle(style);
-		// header.createCell(6).setCellValue("May");
-		// header.getCell(6).setCellStyle(style);
-		// header.createCell(7).setCellValue("Jun");
-		// header.getCell(7).setCellStyle(style);
-		// header.createCell(8).setCellValue("Jul");
-		// header.getCell(8).setCellStyle(style);
-		// header.createCell(9).setCellValue("Aug");
-		// header.getCell(9).setCellStyle(style);
-		// header.createCell(10).setCellValue("Sep");
-		// header.getCell(10).setCellStyle(style);
-		// header.createCell(11).setCellValue("Oct");
-		// header.getCell(11).setCellStyle(style);
-		// header.createCell(12).setCellValue("Nov");
-		// header.getCell(12).setCellStyle(style);
-		// header.createCell(13).setCellValue("Dec");
-		// header.getCell(13).setCellStyle(style);
-		//
-		//
-		//
-
 		int rowCount = 3;
 
 		for (Map.Entry<String, List<ProjectionVO>> entry : exportlist.entrySet()) {
 			String key = entry.getKey();
 			List<ProjectionVO> values = entry.getValue();
-			System.out.println("size of value"+values.size());
+			System.out.println("size of value" + values.size());
 			Row exportvoRow = sheet.createRow(rowCount++);
 			exportvoRow.createCell(0).setCellValue(key);
-			int i=2;
+			int i = 2;
 			int cellincrement = 3;
 
 			for (ProjectionVO exportvo : values) {
-				
-				  System.out.println("Values = " + exportvo.getMonth()+exportvo.getResource_count()+exportvo.getTower()+exportvo.getRevenue());
+
+				System.out.println("Values = " + exportvo.getMonth() + exportvo.getResource_count()
+						+ exportvo.getTower() + exportvo.getRevenue());
 
 				exportvoRow.createCell(1).setCellValue(exportvo.getTower());
-				
-				//for (int i = 2; i <= values.size(); i++) 
-				
-				
-				
-				
-					
 
-					exportvoRow.createCell(i).setCellValue(exportvo.getMonth());
-					System.out.println("rc is"+exportvo.getResource_count());
-					
-					exportvoRow.createCell(cellincrement).setCellValue(exportvo.getRevenue());
-					cellincrement++;
-					cellincrement++;
-					i++;
-					i++;
-				
+				// for (int i = 2; i <= values.size(); i++)
 
+				exportvoRow.createCell(i).setCellValue(exportvo.getMonth());
+				System.out.println("rc is" + exportvo.getResource_count());
+
+				exportvoRow.createCell(cellincrement).setCellValue(exportvo.getRevenue());
+				cellincrement++;
+				cellincrement++;
+				i++;
+				i++;
 
 			}
 		}
